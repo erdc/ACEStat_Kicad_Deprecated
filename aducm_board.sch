@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -491,11 +491,7 @@ Wire Wire Line
 Connection ~ 11400 1950
 Wire Wire Line
 	11400 1950 11400 2000
-Wire Wire Line
-	8350 4450 7850 4450
-Wire Wire Line
-	7850 4450 7850 4500
-Text GLabel 7850 4500 3    50   Input ~ 0
+Text GLabel 8350 4450 0    50   Input ~ 0
 AGND
 Text GLabel 1300 10700 3    50   Input ~ 0
 DVDD
@@ -534,4 +530,217 @@ Wire Wire Line
 Connection ~ 1300 1550
 Wire Wire Line
 	1300 1550 1550 1550
+Text GLabel 7000 4300 3    50   Input ~ 0
+AGND
+$Comp
+L Device:C_Small C?
+U 1 1 5DE9C21A
+P 7250 3750
+F 0 "C?" V 7021 3750 50  0000 C CNN
+F 1 "4.7u" V 7400 3750 50  0000 C CNN
+F 2 "" H 7250 3750 50  0001 C CNN
+F 3 "~" H 7250 3750 50  0001 C CNN
+	1    7250 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DEBDEC6
+P 7700 4950
+F 0 "C?" V 7550 4950 50  0000 C CNN
+F 1 "0.47u" V 7850 4950 50  0000 C CNN
+F 2 "" H 7700 4950 50  0001 C CNN
+F 3 "~" H 7700 4950 50  0001 C CNN
+	1    7700 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DEBEC2A
+P 7700 4550
+F 0 "C?" V 7550 4550 50  0000 C CNN
+F 1 "0.47u" V 7850 4550 50  0000 C CNN
+F 2 "" H 7700 4550 50  0001 C CNN
+F 3 "~" H 7700 4550 50  0001 C CNN
+	1    7700 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DEBE767
+P 7700 4150
+F 0 "C?" V 7550 4150 50  0000 C CNN
+F 1 "4.7u" V 7850 4150 50  0000 C CNN
+F 2 "" H 7700 4150 50  0001 C CNN
+F 3 "~" H 7700 4150 50  0001 C CNN
+	1    7700 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 4350 7950 4350
+Wire Wire Line
+	7800 4150 8350 4150
+Wire Wire Line
+	8350 4250 7900 4250
+Wire Wire Line
+	7900 4250 7900 4550
+Wire Wire Line
+	7900 4550 7800 4550
+Wire Wire Line
+	7950 4350 7950 4950
+Wire Wire Line
+	7950 4950 7800 4950
+Text GLabel 7500 5050 3    50   Input ~ 0
+AGND
+Wire Wire Line
+	7600 4950 7500 4950
+Wire Wire Line
+	7500 4950 7500 5050
+Wire Wire Line
+	7600 4550 7500 4550
+Wire Wire Line
+	7500 4550 7500 4950
+Connection ~ 7500 4950
+Wire Wire Line
+	7600 4150 7500 4150
+Wire Wire Line
+	7500 4150 7500 4550
+Connection ~ 7500 4550
+$Comp
+L Device:C_Small C?
+U 1 1 5DF008D1
+P 11200 4700
+F 0 "C?" H 11050 4700 50  0000 C CNN
+F 1 "4.7u" H 11350 4700 50  0000 C CNN
+F 2 "" H 11200 4700 50  0001 C CNN
+F 3 "~" H 11200 4700 50  0001 C CNN
+	1    11200 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 4650 11000 4650
+Wire Wire Line
+	11000 4650 11000 4600
+Wire Wire Line
+	11000 4600 11200 4600
+Wire Wire Line
+	10750 4750 11000 4750
+Wire Wire Line
+	11000 4750 11000 4800
+Wire Wire Line
+	11000 4800 11200 4800
+$Comp
+L Device:C_Small C?
+U 1 1 5DF0CBC7
+P 7250 4200
+F 0 "C?" V 7400 4200 50  0000 C CNN
+F 1 "4.7u" V 7100 4200 50  0000 C CNN
+F 2 "" H 7250 4200 50  0001 C CNN
+F 3 "~" H 7250 4200 50  0001 C CNN
+	1    7250 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 3750 7150 3750
+Wire Wire Line
+	7350 3750 8350 3750
+Wire Wire Line
+	7150 4200 7000 4200
+Wire Wire Line
+	7000 4200 7000 4300
+Connection ~ 7000 4200
+Wire Wire Line
+	7000 3750 7000 4200
+Wire Wire Line
+	7450 4200 7350 4200
+Wire Wire Line
+	7450 4200 7450 4050
+Wire Wire Line
+	7450 4050 8350 4050
+$Comp
+L Device:R_Small_US R?
+U 1 1 5DF5272B
+P 7750 3200
+F 0 "R?" H 7700 3400 50  0000 L CNN
+F 1 "200" H 7700 3000 50  0000 L CNN
+F 2 "" H 7750 3200 50  0001 C CNN
+F 3 "~" H 7750 3200 50  0001 C CNN
+	1    7750 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 3150 7950 3150
+Wire Wire Line
+	7950 3150 7950 3100
+Wire Wire Line
+	7950 3100 7750 3100
+Wire Wire Line
+	8350 3250 7950 3250
+Wire Wire Line
+	7950 3250 7950 3300
+Wire Wire Line
+	7950 3300 7750 3300
+Wire Wire Line
+	7600 3100 7750 3100
+Connection ~ 7750 3100
+Wire Wire Line
+	7750 3300 7600 3300
+Connection ~ 7750 3300
+$Sheet
+S 14850 900  800  750 
+U 5DF7340A
+F0 "EC Sensor" 50
+F1 "ECSensor.sch" 50
+F2 "WE" O L 14850 1150 50 
+F3 "RE" I L 14850 1300 50 
+F4 "CAP_POT" I L 14850 1550 50 
+F5 "CE" I L 14850 1000 50 
+$EndSheet
+Text GLabel 14650 1000 0    50   Input ~ 0
+CE0
+Text GLabel 14650 1150 0    50   Input ~ 0
+WE0
+Text GLabel 14650 1300 0    50   Input ~ 0
+RE0
+Text GLabel 14650 1550 0    50   Input ~ 0
+CAP_POT0
+Wire Wire Line
+	14650 1000 14850 1000
+Wire Wire Line
+	14850 1150 14650 1150
+Wire Wire Line
+	14850 1300 14650 1300
+Wire Wire Line
+	14850 1550 14650 1550
+Text GLabel 10950 3800 2    50   Input ~ 0
+CAP_POT0
+Wire Wire Line
+	10950 3800 10750 3800
+Text GLabel 10950 3000 2    50   Input ~ 0
+CE0
+Text GLabel 10950 3100 2    50   Input ~ 0
+RE0
+Text GLabel 10950 3200 2    50   Input ~ 0
+WE0
+Wire Wire Line
+	10950 3000 10750 3000
+Wire Wire Line
+	10950 3100 10750 3100
+Wire Wire Line
+	10950 3200 10750 3200
+$Comp
+L Device:C_Small C?
+U 1 1 5DFD0379
+P 12100 3400
+F 0 "C?" H 11950 3400 50  0000 C CNN
+F 1 "0.1u" H 12250 3400 50  0000 C CNN
+F 2 "" H 12100 3400 50  0001 C CNN
+F 3 "~" H 12100 3400 50  0001 C CNN
+	1    12100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 3300 10750 3300
+Text GLabel 12100 3500 3    50   Input ~ 0
+AGND
 $EndSCHEMATC
