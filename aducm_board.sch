@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5DE8B2F5
-P 2400 5700
-F 0 "C?" H 2650 5700 50  0000 L CNN
-F 1 "0.1uF" H 2550 5600 50  0000 L CNN
-F 2 "" H 2438 5550 50  0001 C CNN
-F 3 "~" H 2400 5700 50  0001 C CNN
-	1    2400 5700
+P 3050 5700
+F 0 "C?" V 2800 5650 50  0000 L CNN
+F 1 "0.1uF" V 2900 5600 50  0000 L CNN
+F 2 "" H 3088 5550 50  0001 C CNN
+F 3 "~" H 3050 5700 50  0001 C CNN
+	1    3050 5700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -220,15 +220,11 @@ Wire Wire Line
 Wire Wire Line
 	2100 5500 2100 5700
 Connection ~ 1900 5700
-Wire Wire Line
-	2100 5700 2250 5700
 Connection ~ 2100 5700
 Wire Wire Line
 	2100 5700 2100 5950
 Wire Wire Line
 	1900 5700 1900 5950
-Wire Wire Line
-	2550 5700 3800 5700
 Wire Wire Line
 	3800 5700 3800 6550
 Connection ~ 3800 6550
@@ -236,61 +232,53 @@ Wire Wire Line
 	3800 6550 3800 6650
 Wire Wire Line
 	2800 6550 3800 6550
-Wire Notes Line style solid
+Wire Notes Line
 	2250 5300 2250 2850
-Wire Notes Line style solid
+Wire Notes Line
 	2250 2850 550  2850
-Wire Notes Line style solid
+Wire Notes Line
 	550  2850 550  5300
-Wire Notes Line style solid
+Wire Notes Line style dotted
 	550  5300 2250 5300
-Wire Notes Line style solid
+Wire Notes Line
 	4050 5350 4050 8800
-Wire Notes Line style solid
+Wire Notes Line
 	4050 8800 550  8800
-Wire Notes Line style solid
+Wire Notes Line
 	550  8800 550  5350
-Wire Notes Line style solid
+Wire Notes Line
 	550  5350 4050 5350
 Text Notes 3300 8750 0    50   ~ 0
 FTDI USB to UART
 Text Notes 1800 5250 0    50   ~ 0
 USB Input
 $Comp
-L power:GNDA #PWR?
+L power:GNDA #PWR0101
 U 1 1 5DEA2182
-P 750 10350
-F 0 "#PWR?" H 750 10100 50  0001 C CNN
-F 1 "GNDA" H 755 10177 50  0000 C CNN
-F 2 "" H 750 10350 50  0001 C CNN
-F 3 "" H 750 10350 50  0001 C CNN
-	1    750  10350
+P 750 9250
+F 0 "#PWR0101" H 750 9000 50  0001 C CNN
+F 1 "GNDA" H 755 9077 50  0000 C CNN
+F 2 "" H 750 9250 50  0001 C CNN
+F 3 "" H 750 9250 50  0001 C CNN
+	1    750  9250
 	1    0    0    -1  
 $EndComp
-Text GLabel 750  10350 1    50   Input ~ 0
+Text GLabel 750  9250 1    50   Input ~ 0
 AGND
-Text GLabel 1000 10350 1    50   Input ~ 0
+Text GLabel 1000 9250 1    50   Input ~ 0
 DGND
 $Comp
-L power:GNDD #PWR?
+L power:GNDD #PWR0102
 U 1 1 5DEA28BC
-P 1000 10350
-F 0 "#PWR?" H 1000 10100 50  0001 C CNN
-F 1 "GNDD" H 1004 10195 50  0000 C CNN
-F 2 "" H 1000 10350 50  0001 C CNN
-F 3 "" H 1000 10350 50  0001 C CNN
-	1    1000 10350
+P 1000 9250
+F 0 "#PWR0102" H 1000 9000 50  0001 C CNN
+F 1 "GNDD" H 1004 9095 50  0000 C CNN
+F 2 "" H 1000 9250 50  0001 C CNN
+F 3 "" H 1000 9250 50  0001 C CNN
+	1    1000 9250
 	1    0    0    -1  
 $EndComp
-Wire Notes Line style solid
-	550  8850 4050 8850
-Wire Notes Line style solid
-	4050 8850 4050 10700
-Wire Notes Line style solid
-	4050 10700 550  10700
-Wire Notes Line style solid
-	550  10700 550  8850
-Text Notes 3800 10650 0    50   ~ 0
+Text Notes 1750 10300 0    50   ~ 0
 Nets
 $Comp
 L Device:C C?
@@ -307,8 +295,6 @@ Text GLabel 11900 3200 2    50   Input ~ 0
 DGND
 Text GLabel 8550 6100 3    50   Input ~ 0
 AGND
-Text GLabel 3050 9700 3    50   Input ~ 0
-DVDD
 Text GLabel 7500 5950 3    50   Input ~ 0
 AGND
 $Comp
@@ -327,7 +313,7 @@ L Device:C_Small C?
 U 1 1 5DEBDEC6
 P 8200 6600
 F 0 "C?" V 8050 6600 50  0000 C CNN
-F 1 "0.47u" V 8350 6600 50  0000 C CNN
+F 1 "0.47uF" V 8350 6600 50  0000 C CNN
 F 2 "" H 8200 6600 50  0001 C CNN
 F 3 "~" H 8200 6600 50  0001 C CNN
 	1    8200 6600
@@ -338,7 +324,7 @@ L Device:C_Small C?
 U 1 1 5DEBEC2A
 P 8200 6200
 F 0 "C?" V 8050 6200 50  0000 C CNN
-F 1 "0.47u" V 8350 6200 50  0000 C CNN
+F 1 "0.47uF" V 8350 6200 50  0000 C CNN
 F 2 "" H 8200 6200 50  0001 C CNN
 F 3 "~" H 8200 6200 50  0001 C CNN
 	1    8200 6200
@@ -349,7 +335,7 @@ L Device:C_Small C?
 U 1 1 5DEBE767
 P 8200 5800
 F 0 "C?" V 8050 5800 50  0000 C CNN
-F 1 "4.7u" V 8350 5800 50  0000 C CNN
+F 1 "4.7uF" V 8350 5800 50  0000 C CNN
 F 2 "" H 8200 5800 50  0001 C CNN
 F 3 "~" H 8200 5800 50  0001 C CNN
 	1    8200 5800
@@ -390,7 +376,7 @@ L Device:C_Small C?
 U 1 1 5DF008D1
 P 12150 6400
 F 0 "C?" H 12000 6400 50  0000 C CNN
-F 1 "4.7u" H 12300 6400 50  0000 C CNN
+F 1 "4.7uF" H 12300 6400 50  0000 C CNN
 F 2 "" H 12150 6400 50  0001 C CNN
 F 3 "~" H 12150 6400 50  0001 C CNN
 	1    12150 6400
@@ -401,7 +387,7 @@ L Device:C_Small C?
 U 1 1 5DF0CBC7
 P 7750 5850
 F 0 "C?" V 7900 5850 50  0000 C CNN
-F 1 "4.7u" V 7600 5850 50  0000 C CNN
+F 1 "4.7uF" V 7600 5850 50  0000 C CNN
 F 2 "" H 7750 5850 50  0001 C CNN
 F 3 "~" H 7750 5850 50  0001 C CNN
 	1    7750 5850
@@ -547,7 +533,7 @@ L Device:C_Small C?
 U 1 1 5DF78F33
 P 13650 3900
 F 0 "C?" H 13500 3900 50  0000 C CNN
-F 1 "0.47u" H 13800 3900 50  0000 C CNN
+F 1 "0.47uF" H 13850 3900 50  0000 C CNN
 F 2 "" H 13650 3900 50  0001 C CNN
 F 3 "~" H 13650 3900 50  0001 C CNN
 	1    13650 3900
@@ -560,7 +546,7 @@ L Device:C_Small C?
 U 1 1 5DF88C43
 P 13250 4000
 F 0 "C?" H 13100 4000 50  0000 C CNN
-F 1 "0.47u" H 13400 4000 50  0000 C CNN
+F 1 "0.47uF" H 13450 4000 50  0000 C CNN
 F 2 "" H 13250 4000 50  0001 C CNN
 F 3 "~" H 13250 4000 50  0001 C CNN
 	1    13250 4000
@@ -571,7 +557,7 @@ L Device:C_Small C?
 U 1 1 5DF8A3E5
 P 12450 4300
 F 0 "C?" H 12300 4300 50  0000 C CNN
-F 1 "0.1u" H 12600 4300 50  0000 C CNN
+F 1 "0.1uF" H 12650 4300 50  0000 C CNN
 F 2 "" H 12450 4300 50  0001 C CNN
 F 3 "~" H 12450 4300 50  0001 C CNN
 	1    12450 4300
@@ -586,7 +572,7 @@ L Device:C_Small C?
 U 1 1 5DFC404B
 P 12850 4100
 F 0 "C?" H 12700 4100 50  0000 C CNN
-F 1 "0.1u" H 13000 4100 50  0000 C CNN
+F 1 "0.1uF" H 13050 4100 50  0000 C CNN
 F 2 "" H 12850 4100 50  0001 C CNN
 F 3 "~" H 12850 4100 50  0001 C CNN
 	1    12850 4100
@@ -597,7 +583,7 @@ L Device:C_Small C?
 U 1 1 5DFDA1A2
 P 12050 4500
 F 0 "C?" H 11900 4500 50  0000 C CNN
-F 1 "0.47u" H 12200 4500 50  0000 C CNN
+F 1 "0.47uF" H 12250 4500 50  0000 C CNN
 F 2 "" H 12050 4500 50  0001 C CNN
 F 3 "~" H 12050 4500 50  0001 C CNN
 	1    12050 4500
@@ -608,7 +594,7 @@ L Device:C_Small C?
 U 1 1 5DFE0600
 P 14050 3800
 F 0 "C?" H 13900 3800 50  0000 C CNN
-F 1 "0.47u" H 14200 3800 50  0000 C CNN
+F 1 "0.47uF" H 14200 3800 50  0000 C CNN
 F 2 "" H 14050 3800 50  0001 C CNN
 F 3 "~" H 14050 3800 50  0001 C CNN
 	1    14050 3800
@@ -653,7 +639,7 @@ L Device:C_Small C?
 U 1 1 5E0C1B9F
 P 12350 5350
 F 0 "C?" H 12200 5350 50  0000 C CNN
-F 1 "0.1u" H 12500 5350 50  0000 C CNN
+F 1 "0.1uF" H 12500 5350 50  0000 C CNN
 F 2 "" H 12350 5350 50  0001 C CNN
 F 3 "~" H 12350 5350 50  0001 C CNN
 	1    12350 5350
@@ -695,17 +681,6 @@ Text Label 8700 3200 2    50   ~ 0
 P0.2_SPI0_MISO
 Wire Wire Line
 	8700 3200 8850 3200
-$Comp
-L Device:Battery BT?
-U 1 1 5DF04EFC
-P 1750 9850
-F 0 "BT?" H 1858 9896 50  0000 L CNN
-F 1 "3.3V" H 1858 9805 50  0000 L CNN
-F 2 "" V 1750 9910 50  0001 C CNN
-F 3 "~" V 1750 9910 50  0001 C CNN
-	1    1750 9850
-	1    0    0    -1  
-$EndComp
 Text Label 11400 2800 0    50   ~ 0
 ~RESET
 Wire Wire Line
@@ -713,21 +688,21 @@ Wire Wire Line
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5DF18A71
-P 4650 6750
-F 0 "SW?" H 4650 7035 50  0000 C CNN
-F 1 "SW_Push" H 4650 6944 50  0000 C CNN
-F 2 "" H 4650 6950 50  0001 C CNN
-F 3 "~" H 4650 6950 50  0001 C CNN
-	1    4650 6750
+P 4250 3550
+F 0 "SW?" H 4250 3835 50  0000 C CNN
+F 1 "SW_Push" H 4250 3744 50  0000 C CNN
+F 2 "" H 4250 3750 50  0001 C CNN
+F 3 "~" H 4250 3750 50  0001 C CNN
+	1    4250 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 4850 6750 3    50   Input ~ 0
+Text GLabel 4450 3550 3    50   Input ~ 0
 DGND
-Text Label 4450 6750 3    50   ~ 0
+Text Label 4050 3550 3    50   ~ 0
 ~RESET
-Wire Notes Line style solid
-	5050 7150 4300 7150
-Text Notes 4600 7100 0    50   ~ 0
+Wire Notes Line
+	4650 3950 3900 3950
+Text Notes 4200 3900 0    50   ~ 0
 MCU Reset
 Text Label 14700 2050 2    50   ~ 0
 CE1
@@ -864,8 +839,8 @@ Wire Wire Line
 	8700 4800 8850 4800
 Wire Wire Line
 	8700 4900 8850 4900
-Wire Notes Line style solid
-	5050 6400 4300 6400
+Wire Notes Line
+	4650 3200 3900 3200
 $Comp
 L Device:C C?
 U 1 1 5DF57CD7
@@ -925,10 +900,10 @@ Wire Wire Line
 	2900 750  2600 750 
 Wire Wire Line
 	2600 750  2600 1200
-Wire Notes Line style solid
-	5050 6400 5050 7150
-Wire Notes Line style solid
-	4300 6400 4300 7150
+Wire Notes Line
+	4650 3200 4650 3950
+Wire Notes Line
+	3900 3200 3900 3950
 Text GLabel 2600 2850 3    50   Input ~ 0
 AGND
 Wire Wire Line
@@ -1033,13 +1008,13 @@ DGND
 Wire Wire Line
 	3750 1500 3750 1200
 Connection ~ 3750 1200
-Wire Notes Line style solid
+Wire Notes Line
 	2500 550  4800 550 
-Wire Notes Line style solid
+Wire Notes Line
 	4800 550  4800 3150
-Wire Notes Line style solid
+Wire Notes Line
 	4800 3150 2500 3150
-Wire Notes Line style solid
+Wire Notes Line
 	2500 3150 2500 550 
 Text Notes 3250 3050 0    50   ~ 0
 Decoupling Caps where space was tight
@@ -1066,8 +1041,8 @@ $Comp
 L Device:Crystal_GND24 Y?
 U 1 1 5E023AA8
 P 3000 3950
-F 0 "Y?" H 2600 4300 50  0000 L CNN
-F 1 "Crystal_GND24" H 2350 4200 50  0000 L CNN
+F 0 "Y?" H 2700 4250 50  0000 L CNN
+F 1 "32MHz" H 2600 4150 50  0000 L CNN
 F 2 "" H 3000 3950 50  0001 C CNN
 F 3 "~" H 3000 3950 50  0001 C CNN
 	1    3000 3950
@@ -1090,8 +1065,8 @@ $Comp
 L Device:C C?
 U 1 1 5E030EC2
 P 3300 4100
-F 0 "C?" H 3050 4100 50  0000 L CNN
-F 1 "7pF" H 3000 4000 50  0000 L CNN
+F 0 "C?" H 3450 4100 50  0000 L CNN
+F 1 "7pF" H 3400 4000 50  0000 L CNN
 F 2 "" H 3338 3950 50  0001 C CNN
 F 3 "~" H 3300 4100 50  0001 C CNN
 	1    3300 4100
@@ -1124,27 +1099,14 @@ Text Label 2700 3950 2    50   ~ 0
 XTALI
 Text Label 3300 3950 0    50   ~ 0
 XTALO
-Wire Notes Line style solid
+Wire Notes Line
 	2300 3200 3850 3200
-Wire Notes Line style solid
+Wire Notes Line
 	3850 3200 3850 4850
-Wire Notes Line style solid
+Wire Notes Line
 	3850 4850 2300 4850
-Wire Notes Line style solid
+Wire Notes Line
 	2300 4850 2300 3200
-Text GLabel 1750 9650 1    50   Input ~ 0
-VBAT
-Text GLabel 1750 10200 3    50   Input ~ 0
-DGND
-Text GLabel 1900 10200 3    50   Input ~ 0
-AGND
-Wire Wire Line
-	1900 10200 1900 10050
-Wire Wire Line
-	1900 10050 1750 10050
-Wire Wire Line
-	1750 10050 1750 10200
-Connection ~ 1750 10050
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J?
 U 1 1 5E1C696B
@@ -1184,7 +1146,7 @@ Wire Wire Line
 	1050 1050 900  1050
 Wire Wire Line
 	900  950  1050 950 
-Wire Notes Line style solid
+Wire Notes Line
 	550  550  2450 550 
 Text Notes 1500 2750 0    50   ~ 0
 6-pin J-Tag Connector
@@ -1233,47 +1195,318 @@ Wire Wire Line
 Connection ~ 1450 1900
 Wire Wire Line
 	1600 1900 1600 2000
-Wire Notes Line style solid
+Wire Notes Line
 	2450 2800 550  2800
-Wire Notes Line style solid
+Wire Notes Line
 	2450 550  2450 2800
-Wire Notes Line style solid
+Wire Notes Line
 	550  550  550  2800
-Text GLabel 4550 9000 0    50   Input ~ 0
-VBAT
+Wire Wire Line
+	2100 5700 2900 5700
+Wire Wire Line
+	3200 5700 3800 5700
+Text GLabel 1800 9300 3    50   Input ~ 0
+AVDDIN
 $Comp
-L Switch:SW_SPST SW?
-U 1 1 5E48F0AF
-P 4950 9000
-F 0 "SW?" H 4950 9235 50  0000 C CNN
-F 1 "SW_SPST" H 4950 9144 50  0000 C CNN
-F 2 "" H 4950 9000 50  0001 C CNN
-F 3 "~" H 4950 9000 50  0001 C CNN
-	1    4950 9000
+L power:+3.3V #PWR?
+U 1 1 5E01C0FB
+P 1650 9150
+F 0 "#PWR?" H 1650 9000 50  0001 C CNN
+F 1 "+3.3V" H 1665 9323 50  0000 C CNN
+F 2 "" H 1650 9150 50  0001 C CNN
+F 3 "" H 1650 9150 50  0001 C CNN
+	1    1650 9150
 	1    0    0    -1  
+$EndComp
+Text GLabel 1500 9300 3    50   Input ~ 0
+DVDDIN
+Wire Wire Line
+	1500 9300 1500 9250
+Wire Wire Line
+	1500 9250 1650 9250
+Wire Wire Line
+	1650 9250 1650 9150
+Wire Wire Line
+	1800 9300 1800 9250
+Wire Wire Line
+	1800 9250 1650 9250
+Connection ~ 1650 9250
+Wire Notes Line
+	2000 8850 550  8850
+Wire Notes Line
+	550  5300 2250 5300
+Text GLabel 2450 10150 0    50   Input ~ 0
+DVDDIN
+Text GLabel 2450 9150 0    50   Input ~ 0
+AVDDIN
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E09B9F0
+P 900 9600
+F 0 "J?" V 962 9644 50  0000 L CNN
+F 1 "Conn_01x02_Male" V 1053 9644 50  0000 L CNN
+F 2 "" H 900 9600 50  0001 C CNN
+F 3 "~" H 900 9600 50  0001 C CNN
+	1    900  9600
+	0    1    1    0   
+$EndComp
+Text GLabel 650  9950 3    50   Input ~ 0
+AGND
+Text GLabel 750  9950 3    50   Input ~ 0
+DGND
+Text GLabel 1050 9950 3    50   Input ~ 0
+DVDDIN
+Text GLabel 950  9950 3    50   Input ~ 0
+AVDDIN
+Wire Wire Line
+	1050 9950 1050 9900
+Wire Wire Line
+	1050 9900 950  9900
+Wire Wire Line
+	900  9900 900  9800
+Wire Wire Line
+	950  9950 950  9900
+Connection ~ 950  9900
+Wire Wire Line
+	950  9900 900  9900
+Wire Wire Line
+	650  9950 650  9900
+Wire Wire Line
+	650  9900 750  9900
+Wire Wire Line
+	800  9900 800  9800
+Wire Wire Line
+	750  9950 750  9900
+Connection ~ 750  9900
+Wire Wire Line
+	750  9900 800  9900
+Wire Notes Line
+	2000 10450 550  10450
+Wire Notes Line
+	550  8850 550  10450
+Wire Notes Line
+	2000 8850 2000 10450
+$Comp
+L Device:C C?
+U 1 1 5E0E1DE2
+P 2900 9400
+F 0 "C?" V 3150 9350 50  0000 L CNN
+F 1 "0.1uF" V 3050 9300 50  0000 L CNN
+F 2 "" H 2938 9250 50  0001 C CNN
+F 3 "~" H 2900 9400 50  0001 C CNN
+	1    2900 9400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E0E2464
+P 3300 9400
+F 0 "C?" V 3550 9350 50  0000 L CNN
+F 1 "10uF" V 3450 9300 50  0000 L CNN
+F 2 "" H 3338 9250 50  0001 C CNN
+F 3 "~" H 3300 9400 50  0001 C CNN
+	1    3300 9400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E0E26A1
+P 2900 10400
+F 0 "C?" V 3150 10350 50  0000 L CNN
+F 1 "0.1uF" V 3050 10300 50  0000 L CNN
+F 2 "" H 2938 10250 50  0001 C CNN
+F 3 "~" H 2900 10400 50  0001 C CNN
+	1    2900 10400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E0E2E12
+P 3300 10400
+F 0 "C?" V 3550 10350 50  0000 L CNN
+F 1 "10uF" V 3450 10300 50  0000 L CNN
+F 2 "" H 3338 10250 50  0001 C CNN
+F 3 "~" H 3300 10400 50  0001 C CNN
+	1    3300 10400
+	-1   0    0    1   
+$EndComp
+Text GLabel 3300 9800 3    50   Input ~ 0
+AGND
+Wire Wire Line
+	2450 9150 2900 9150
+Wire Wire Line
+	2900 9150 2900 9250
+Wire Wire Line
+	2900 9150 3300 9150
+Wire Wire Line
+	3300 9150 3300 9250
+Connection ~ 2900 9150
+Wire Wire Line
+	2900 9550 2900 9700
+Wire Wire Line
+	2900 9700 3300 9700
+Wire Wire Line
+	3300 9550 3300 9700
+Connection ~ 3300 9700
+Wire Wire Line
+	3300 9700 3300 9800
+Wire Wire Line
+	2450 10150 2900 10150
+Wire Wire Line
+	3300 10150 3300 10250
+Wire Wire Line
+	2900 10150 2900 10250
+Connection ~ 2900 10150
+Wire Wire Line
+	2900 10150 3300 10150
+Text GLabel 3300 10800 3    50   Input ~ 0
+DGND
+Wire Wire Line
+	2900 10550 2900 10700
+Wire Wire Line
+	2900 10700 3300 10700
+Wire Wire Line
+	3300 10550 3300 10700
+Connection ~ 3300 10700
+Wire Wire Line
+	3300 10700 3300 10800
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5E18A0EA
+P 3600 9150
+F 0 "FB?" V 3850 9100 50  0000 L CNN
+F 1 "60Ohm at 100Mhz" V 3750 8650 50  0000 L CNN
+F 2 "" V 3530 9150 50  0001 C CNN
+F 3 "~" H 3600 9150 50  0001 C CNN
+	1    3600 9150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5E18B28A
+P 3600 10150
+F 0 "FB?" V 3800 10100 50  0000 L CNN
+F 1 "60Ohm at 100Mhz" V 3700 9650 50  0000 L CNN
+F 2 "" V 3530 10150 50  0001 C CNN
+F 3 "~" H 3600 10150 50  0001 C CNN
+	1    3600 10150
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4550 9000 4750 9000
+	3300 9150 3500 9150
+Connection ~ 3300 9150
+Wire Wire Line
+	3500 10150 3300 10150
+Connection ~ 3300 10150
 $Comp
-L Device:C_Small C?
-U 1 1 5E4A94E7
-P 5650 9300
-F 0 "C?" H 5500 9300 50  0000 C CNN
-F 1 "0.1u" H 5800 9300 50  0000 C CNN
-F 2 "" H 5650 9300 50  0001 C CNN
-F 3 "~" H 5650 9300 50  0001 C CNN
-	1    5650 9300
-	1    0    0    -1  
+L Device:C C?
+U 1 1 5E1AD3B2
+P 4300 10400
+F 0 "C?" V 4550 10350 50  0000 L CNN
+F 1 "0.1uF" V 4450 10300 50  0000 L CNN
+F 2 "" H 4338 10250 50  0001 C CNN
+F 3 "~" H 4300 10400 50  0001 C CNN
+	1    4300 10400
+	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C?
-U 1 1 5E4AB6E3
-P 6100 9300
-F 0 "C?" H 5950 9300 50  0000 C CNN
-F 1 "10u" H 6250 9300 50  0000 C CNN
-F 2 "" H 6100 9300 50  0001 C CNN
-F 3 "~" H 6100 9300 50  0001 C CNN
-	1    6100 9300
-	1    0    0    -1  
+L Device:C C?
+U 1 1 5E1AE1BF
+P 4700 10400
+F 0 "C?" V 4950 10350 50  0000 L CNN
+F 1 "10uF" V 4850 10300 50  0000 L CNN
+F 2 "" H 4738 10250 50  0001 C CNN
+F 3 "~" H 4700 10400 50  0001 C CNN
+	1    4700 10400
+	-1   0    0    1   
 $EndComp
+$Comp
+L Device:C C?
+U 1 1 5E1AFA1F
+P 4300 9400
+F 0 "C?" V 4550 9350 50  0000 L CNN
+F 1 "0.1uF" V 4450 9300 50  0000 L CNN
+F 2 "" H 4338 9250 50  0001 C CNN
+F 3 "~" H 4300 9400 50  0001 C CNN
+	1    4300 9400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 9150 4300 9250
+Wire Wire Line
+	4700 10150 4700 10250
+Wire Wire Line
+	4300 10250 4300 10150
+Connection ~ 4300 10150
+Wire Wire Line
+	4300 10150 4700 10150
+$Comp
+L Device:R_Small_US R?
+U 1 1 5E209219
+P 3900 9150
+F 0 "R?" V 4100 9100 50  0000 L CNN
+F 1 "2.2" V 4000 9100 50  0000 L CNN
+F 2 "" H 3900 9150 50  0001 C CNN
+F 3 "~" H 3900 9150 50  0001 C CNN
+	1    3900 9150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5E20B6D4
+P 3900 10150
+F 0 "R?" V 4100 10100 50  0000 L CNN
+F 1 "2.2" V 4000 10100 50  0000 L CNN
+F 2 "" H 3900 10150 50  0001 C CNN
+F 3 "~" H 3900 10150 50  0001 C CNN
+	1    3900 10150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 9150 3800 9150
+Wire Wire Line
+	4000 9150 4300 9150
+Wire Wire Line
+	3700 10150 3800 10150
+Wire Wire Line
+	4000 10150 4300 10150
+Text GLabel 4300 9800 3    50   Input ~ 0
+AGND
+Text GLabel 4700 10800 3    50   Input ~ 0
+DGND
+Wire Wire Line
+	4700 10550 4700 10700
+Wire Wire Line
+	4700 10700 4300 10700
+Wire Wire Line
+	4300 10700 4300 10550
+Connection ~ 4700 10700
+Wire Wire Line
+	4700 10700 4700 10800
+Wire Wire Line
+	4300 9800 4300 9550
+Text GLabel 4450 9150 2    50   Input ~ 0
+AVDD
+Wire Wire Line
+	4300 9150 4450 9150
+Connection ~ 4300 9150
+Text GLabel 4850 10150 2    50   Input ~ 0
+DVDD
+Connection ~ 4700 10150
+Wire Wire Line
+	4700 10150 4850 10150
+Wire Notes Line
+	2050 8850 5150 8850
+Wire Notes Line
+	5150 8850 5150 11200
+Wire Notes Line
+	5150 11200 2050 11200
+Wire Notes Line
+	2050 8850 2050 11200
+Text Notes 2150 11150 0    50   ~ 0
+External Power Filtering
+Text Notes 3500 9150 3    50   ~ 0
+FBTH1608HE600-T 
+Text Notes 3500 10150 3    50   ~ 0
+FBTH1608HE600-T 
 $EndSCHEMATC
