@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -19,6 +19,8 @@ $Comp
 L Device:C_Small C?
 U 1 1 5DF76279
 P 3350 3850
+AR Path="/5DF7340A/5DF76279" Ref="C?"  Part="1" 
+AR Path="/5DF54D0C/5DF76279" Ref="C?"  Part="1" 
 F 0 "C?" H 3442 3896 50  0000 L CNN
 F 1 "0.1u" H 3442 3805 50  0000 L CNN
 F 2 "" H 3350 3850 50  0001 C CNN
@@ -30,6 +32,8 @@ $Comp
 L Device:C_Small C?
 U 1 1 5DF76497
 P 3000 3600
+AR Path="/5DF7340A/5DF76497" Ref="C?"  Part="1" 
+AR Path="/5DF54D0C/5DF76497" Ref="C?"  Part="1" 
 F 0 "C?" H 3092 3646 50  0000 L CNN
 F 1 "0.1u" H 3092 3555 50  0000 L CNN
 F 2 "" H 3000 3600 50  0001 C CNN
@@ -41,6 +45,8 @@ $Comp
 L Device:C_Small C?
 U 1 1 5DF768A0
 P 3700 4100
+AR Path="/5DF7340A/5DF768A0" Ref="C?"  Part="1" 
+AR Path="/5DF54D0C/5DF768A0" Ref="C?"  Part="1" 
 F 0 "C?" H 3792 4146 50  0000 L CNN
 F 1 "0.1u" H 3792 4055 50  0000 L CNN
 F 2 "" H 3700 4100 50  0001 C CNN
@@ -52,6 +58,8 @@ $Comp
 L chemcrab:EC_Sensor_Input_3_Pin J?
 U 1 1 5DF7EEA4
 P 4100 3600
+AR Path="/5DF7340A/5DF7EEA4" Ref="J?"  Part="1" 
+AR Path="/5DF54D0C/5DF7EEA4" Ref="J?"  Part="1" 
 F 0 "J?" H 3974 3633 50  0000 R CNN
 F 1 "EC_Sensor_Input_3_Pin" H 3974 3542 50  0000 R CNN
 F 2 "" H 4100 3600 50  0001 C CNN
@@ -107,4 +115,84 @@ Wire Wire Line
 	3000 3200 3450 3200
 Wire Wire Line
 	3450 3200 3450 3500
+$Comp
+L Device:Q_PMOS_DSG Q?
+U 1 1 5E0080C3
+P 1550 1350
+AR Path="/5DF54D0C/5E0080C3" Ref="Q?"  Part="1" 
+AR Path="/5DF7340A/5E0080C3" Ref="Q?"  Part="1" 
+F 0 "Q?" H 1755 1396 50  0000 L CNN
+F 1 "Q_PMOS_DSG" H 1755 1305 50  0000 L CNN
+F 2 "" H 1750 1450 50  0001 C CNN
+F 3 "~" H 1550 1350 50  0001 C CNN
+	1    1550 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5E00BDC0
+P 1250 1350
+AR Path="/5DF54D0C/5E00BDC0" Ref="R?"  Part="1" 
+AR Path="/5DF7340A/5E00BDC0" Ref="R?"  Part="1" 
+F 0 "R?" V 1045 1350 50  0000 C CNN
+F 1 "150k" V 1136 1350 50  0000 C CNN
+F 2 "" H 1250 1350 50  0001 C CNN
+F 3 "~" H 1250 1350 50  0001 C CNN
+	1    1250 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5E00C4B8
+P 1650 1050
+AR Path="/5DF54D0C/5E00C4B8" Ref="R?"  Part="1" 
+AR Path="/5DF7340A/5E00C4B8" Ref="R?"  Part="1" 
+F 0 "R?" H 1582 1004 50  0000 R CNN
+F 1 "0" H 1582 1095 50  0000 R CNN
+F 2 "" H 1650 1050 50  0001 C CNN
+F 3 "~" H 1650 1050 50  0001 C CNN
+	1    1650 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5E00C73E
+P 1650 1650
+AR Path="/5DF54D0C/5E00C73E" Ref="R?"  Part="1" 
+AR Path="/5DF7340A/5E00C73E" Ref="R?"  Part="1" 
+F 0 "R?" H 1718 1696 50  0000 L CNN
+F 1 "0" H 1718 1605 50  0000 L CNN
+F 2 "" H 1650 1650 50  0001 C CNN
+F 3 "~" H 1650 1650 50  0001 C CNN
+	1    1650 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1000 1350 0    50   Input ~ 0
+AVDD
+Wire Wire Line
+	1000 1350 1150 1350
+Text Label 3150 2900 2    50   ~ 0
+RE
+Text Label 3150 3050 2    50   ~ 0
+WE
+Text Label 3150 3200 2    50   ~ 0
+CE
+Text Label 1650 800  1    50   ~ 0
+RE
+Text Label 1650 1900 3    50   ~ 0
+WE
+Wire Wire Line
+	1650 1750 1650 1900
+Wire Wire Line
+	1650 950  1650 800 
+Wire Notes Line style solid
+	2300 650  2300 2050
+Wire Notes Line style solid
+	2300 2050 700  2050
+Wire Notes Line style solid
+	700  2050 700  650 
+Wire Notes Line style solid
+	700  650  2300 650 
+Text Notes 750  2000 0    50   ~ 0
+P-Channel FET used \nto short RE and WE\non power off
 $EndSCHEMATC
