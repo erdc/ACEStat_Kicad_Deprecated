@@ -16,53 +16,53 @@ $EndDescr
 Text GLabel 3350 4400 3    50   Input ~ 0
 AGND
 $Comp
-L Device:C_Small C?
+L Device:C_Small C38
 U 1 1 5DF76279
 P 3350 3850
-AR Path="/5DF7340A/5DF76279" Ref="C?"  Part="1" 
-AR Path="/5DF54D0C/5DF76279" Ref="C?"  Part="1" 
-F 0 "C?" H 3442 3896 50  0000 L CNN
+AR Path="/5DF7340A/5DF76279" Ref="C38"  Part="1" 
+AR Path="/5DF54D0C/5DF76279" Ref="C41"  Part="1" 
+F 0 "C41" H 3442 3896 50  0000 L CNN
 F 1 "0.1uF" H 3442 3805 50  0000 L CNN
-F 2 "" H 3350 3850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3350 3850 50  0001 C CNN
 F 3 "~" H 3350 3850 50  0001 C CNN
 	1    3350 3850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C37
 U 1 1 5DF76497
 P 3000 3600
-AR Path="/5DF7340A/5DF76497" Ref="C?"  Part="1" 
-AR Path="/5DF54D0C/5DF76497" Ref="C?"  Part="1" 
-F 0 "C?" H 3092 3646 50  0000 L CNN
+AR Path="/5DF7340A/5DF76497" Ref="C37"  Part="1" 
+AR Path="/5DF54D0C/5DF76497" Ref="C40"  Part="1" 
+F 0 "C40" H 3092 3646 50  0000 L CNN
 F 1 "0.1uF" H 3092 3555 50  0000 L CNN
-F 2 "" H 3000 3600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3000 3600 50  0001 C CNN
 F 3 "~" H 3000 3600 50  0001 C CNN
 	1    3000 3600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C39
 U 1 1 5DF768A0
 P 3700 4100
-AR Path="/5DF7340A/5DF768A0" Ref="C?"  Part="1" 
-AR Path="/5DF54D0C/5DF768A0" Ref="C?"  Part="1" 
-F 0 "C?" H 3792 4146 50  0000 L CNN
+AR Path="/5DF7340A/5DF768A0" Ref="C39"  Part="1" 
+AR Path="/5DF54D0C/5DF768A0" Ref="C42"  Part="1" 
+F 0 "C42" H 3792 4146 50  0000 L CNN
 F 1 "0.1uF" H 3792 4055 50  0000 L CNN
-F 2 "" H 3700 4100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3700 4100 50  0001 C CNN
 F 3 "~" H 3700 4100 50  0001 C CNN
 	1    3700 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L chemcrab:EC_Sensor_Input_3_Pin J?
+L chemcrab:EC_Sensor_Input_3_Pin J4
 U 1 1 5DF7EEA4
 P 4100 3600
-AR Path="/5DF7340A/5DF7EEA4" Ref="J?"  Part="1" 
-AR Path="/5DF54D0C/5DF7EEA4" Ref="J?"  Part="1" 
-F 0 "J?" H 3974 3633 50  0000 R CNN
+AR Path="/5DF7340A/5DF7EEA4" Ref="J4"  Part="1" 
+AR Path="/5DF54D0C/5DF7EEA4" Ref="J5"  Part="1" 
+F 0 "J5" H 3974 3633 50  0000 R CNN
 F 1 "EC_Sensor_Input_3_Pin" H 3974 3542 50  0000 R CNN
-F 2 "" H 4100 3600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 4100 3600 50  0001 C CNN
 F 3 "~" H 4100 3600 50  0001 C CNN
 	1    4100 3600
 	-1   0    0    -1  
@@ -116,53 +116,53 @@ Wire Wire Line
 Wire Wire Line
 	3450 3200 3450 3500
 $Comp
-L Device:Q_PMOS_DSG Q?
+L Device:Q_PMOS_DSG Q2
 U 1 1 5E0080C3
 P 1550 1350
-AR Path="/5DF54D0C/5E0080C3" Ref="Q?"  Part="1" 
-AR Path="/5DF7340A/5E0080C3" Ref="Q?"  Part="1" 
-F 0 "Q?" H 1755 1396 50  0000 L CNN
+AR Path="/5DF54D0C/5E0080C3" Ref="Q2"  Part="1" 
+AR Path="/5DF7340A/5E0080C3" Ref="Q1"  Part="1" 
+F 0 "Q2" H 1755 1396 50  0000 L CNN
 F 1 "Q_PMOS_DSG" H 1755 1305 50  0000 L CNN
-F 2 "" H 1750 1450 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1750 1450 50  0001 C CNN
 F 3 "~" H 1550 1350 50  0001 C CNN
 	1    1550 1350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R12
 U 1 1 5E00BDC0
 P 1250 1350
-AR Path="/5DF54D0C/5E00BDC0" Ref="R?"  Part="1" 
-AR Path="/5DF7340A/5E00BDC0" Ref="R?"  Part="1" 
-F 0 "R?" V 1045 1350 50  0000 C CNN
+AR Path="/5DF54D0C/5E00BDC0" Ref="R12"  Part="1" 
+AR Path="/5DF7340A/5E00BDC0" Ref="R9"  Part="1" 
+F 0 "R12" V 1045 1350 50  0000 C CNN
 F 1 "150k" V 1136 1350 50  0000 C CNN
-F 2 "" H 1250 1350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1250 1350 50  0001 C CNN
 F 3 "~" H 1250 1350 50  0001 C CNN
 	1    1250 1350
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R13
 U 1 1 5E00C4B8
 P 1650 1050
-AR Path="/5DF54D0C/5E00C4B8" Ref="R?"  Part="1" 
-AR Path="/5DF7340A/5E00C4B8" Ref="R?"  Part="1" 
-F 0 "R?" H 1582 1004 50  0000 R CNN
+AR Path="/5DF54D0C/5E00C4B8" Ref="R13"  Part="1" 
+AR Path="/5DF7340A/5E00C4B8" Ref="R10"  Part="1" 
+F 0 "R13" H 1582 1004 50  0000 R CNN
 F 1 "0" H 1582 1095 50  0000 R CNN
-F 2 "" H 1650 1050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1650 1050 50  0001 C CNN
 F 3 "~" H 1650 1050 50  0001 C CNN
 	1    1650 1050
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R14
 U 1 1 5E00C73E
 P 1650 1650
-AR Path="/5DF54D0C/5E00C73E" Ref="R?"  Part="1" 
-AR Path="/5DF7340A/5E00C73E" Ref="R?"  Part="1" 
-F 0 "R?" H 1718 1696 50  0000 L CNN
+AR Path="/5DF54D0C/5E00C73E" Ref="R14"  Part="1" 
+AR Path="/5DF7340A/5E00C73E" Ref="R11"  Part="1" 
+F 0 "R14" H 1718 1696 50  0000 L CNN
 F 1 "0" H 1718 1605 50  0000 L CNN
-F 2 "" H 1650 1650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1650 1650 50  0001 C CNN
 F 3 "~" H 1650 1650 50  0001 C CNN
 	1    1650 1650
 	1    0    0    -1  
