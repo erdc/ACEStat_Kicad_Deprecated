@@ -1,14 +1,15 @@
 EESchema Schematic File Version 4
+LIBS:aducm_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 3
-Title ""
+Sheet 1 4
+Title "ADuCM355 Template"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
+Comp "USACE ERDC"
+Comment1 "Keith Conley, Jason Ray"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -22,28 +23,6 @@ F 1 "aducm_355" H 10050 6224 50  0000 C CNN
 F 2 "ADUCM355:aducm355" H 10050 4350 50  0001 C CNN
 F 3 "" H 10050 4350 50  0001 C CNN
 	1    10000 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C12
-U 1 1 5DE8B2F5
-P 3050 5700
-F 0 "C12" V 2800 5650 50  0000 L CNN
-F 1 "0.1uF" V 2900 5600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3088 5550 50  0001 C CNN
-F 3 "~" H 3050 5700 50  0001 C CNN
-	1    3050 5700
-	0    1    1    0   
-$EndComp
-$Comp
-L Interface_USB:FT232RL U2
-U 1 1 5DE8BBBB
-P 2000 6950
-F 0 "U2" H 2000 8131 50  0000 C CNN
-F 1 "FT232RL" H 2000 8040 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 3100 6050 50  0001 C CNN
-F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf" H 2000 6950 50  0001 C CNN
-	1    2000 6950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -87,91 +66,6 @@ Text GLabel 1650 3700 2    50   Input ~ 0
 5VUSB
 Wire Wire Line
 	1600 3700 1650 3700
-Text GLabel 2250 5500 2    50   Input ~ 0
-5VUSB
-Text GLabel 1800 8200 3    50   Input ~ 0
-DGND
-Wire Wire Line
-	1800 7950 1800 8050
-Wire Wire Line
-	1800 8050 2000 8050
-Wire Wire Line
-	2000 8050 2000 7950
-Connection ~ 1800 8050
-Wire Wire Line
-	1800 8050 1800 8200
-Wire Wire Line
-	2000 8050 2100 8050
-Wire Wire Line
-	2100 8050 2100 7950
-Connection ~ 2000 8050
-Wire Wire Line
-	2100 8050 2200 8050
-Wire Wire Line
-	2200 8050 2200 7950
-Connection ~ 2100 8050
-Text GLabel 700  8150 3    50   Input ~ 0
-DGND
-NoConn ~ 1200 7150
-NoConn ~ 1200 7350
-Wire Wire Line
-	1200 7650 700  7650
-Connection ~ 700  7650
-Wire Wire Line
-	700  7650 700  8150
-Text GLabel 1100 6950 0    50   Input ~ 0
-3V3VOUT
-Wire Wire Line
-	1200 6950 1100 6950
-Text GLabel 1750 5500 0    50   Input ~ 0
-3V3VOUT
-$Comp
-L Device:C C1
-U 1 1 5DEE4B8D
-P 950 5700
-F 0 "C1" V 700 5650 50  0000 L CNN
-F 1 "0.1uF" V 800 5600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 988 5550 50  0001 C CNN
-F 3 "~" H 950 5700 50  0001 C CNN
-	1    950  5700
-	0    1    1    0   
-$EndComp
-NoConn ~ 2800 7250
-NoConn ~ 2800 7350
-NoConn ~ 2800 7450
-NoConn ~ 2800 7550
-NoConn ~ 2800 7650
-NoConn ~ 2800 6450
-NoConn ~ 2800 6650
-NoConn ~ 2800 6750
-NoConn ~ 2800 6850
-NoConn ~ 2800 6950
-Wire Wire Line
-	2900 6250 2800 6250
-Wire Wire Line
-	2800 6350 2900 6350
-$Comp
-L Device:Jumper_NC_Small JP2
-U 1 1 5DEFA3DE
-P 3000 6350
-F 0 "JP2" H 3000 6250 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 3000 6471 50  0001 C CNN
-F 2 "" H 3000 6350 50  0001 C CNN
-F 3 "~" H 3000 6350 50  0001 C CNN
-	1    3000 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 5DEFA665
-P 3000 6250
-F 0 "JP1" H 3000 6350 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 3000 6371 50  0001 C CNN
-F 2 "" H 3000 6250 50  0001 C CNN
-F 3 "~" H 3000 6250 50  0001 C CNN
-	1    3000 6250
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C3
 U 1 1 5DE8B5C2
@@ -209,29 +103,6 @@ Wire Wire Line
 Connection ~ 1150 4500
 Wire Wire Line
 	1150 4500 1300 4500
-Text GLabel 3800 6650 3    50   Input ~ 0
-DGND
-Wire Wire Line
-	1750 5500 1900 5500
-Wire Wire Line
-	1900 5500 1900 5700
-Wire Wire Line
-	2250 5500 2100 5500
-Wire Wire Line
-	2100 5500 2100 5700
-Connection ~ 1900 5700
-Connection ~ 2100 5700
-Wire Wire Line
-	2100 5700 2100 5950
-Wire Wire Line
-	1900 5700 1900 5950
-Wire Wire Line
-	3800 5700 3800 6550
-Connection ~ 3800 6550
-Wire Wire Line
-	3800 6550 3800 6650
-Wire Wire Line
-	2800 6550 3800 6550
 Wire Notes Line
 	2250 5300 2250 2850
 Wire Notes Line
@@ -240,16 +111,6 @@ Wire Notes Line
 	550  2850 550  5300
 Wire Notes Line style dotted
 	550  5300 2250 5300
-Wire Notes Line
-	4050 5350 4050 8800
-Wire Notes Line
-	4050 8800 550  8800
-Wire Notes Line
-	550  8800 550  5350
-Wire Notes Line
-	550  5350 4050 5350
-Text Notes 3300 8750 0    50   ~ 0
-FTDI USB to UART
 Text Notes 1800 5250 0    50   ~ 0
 USB Input
 $Comp
@@ -280,17 +141,6 @@ F 3 "" H 850 10950 50  0001 C CNN
 $EndComp
 Text Notes 1100 11150 0    50   ~ 0
 Grounds
-$Comp
-L Device:C C2
-U 1 1 5DEC6B87
-P 950 6250
-F 0 "C2" V 1200 6200 50  0000 L CNN
-F 1 "0.1uF" V 1100 6150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 988 6100 50  0001 C CNN
-F 3 "~" H 950 6250 50  0001 C CNN
-	1    950  6250
-	0    -1   -1   0   
-$EndComp
 Text GLabel 11900 3200 2    50   Input ~ 0
 DGND
 Text GLabel 8550 6100 3    50   Input ~ 0
@@ -457,7 +307,7 @@ SWCLK
 Wire Wire Line
 	8850 2800 8700 2800
 Text Label 8700 2900 2    50   ~ 0
-SDIO
+SWDIO
 Wire Wire Line
 	8700 2900 8850 2900
 Text Label 8700 3600 2    50   ~ 0
@@ -504,22 +354,6 @@ Wire Wire Line
 	14700 1150 14850 1150
 Wire Wire Line
 	14850 1000 14700 1000
-Text Label 1050 6550 2    50   ~ 0
-USBD+
-Text Label 1050 6650 2    50   ~ 0
-USBD-
-Wire Wire Line
-	1050 6650 1200 6650
-Wire Wire Line
-	1050 6550 1200 6550
-Text Label 3250 6250 0    50   ~ 0
-P0.11_SIN
-Text Label 3250 6350 0    50   ~ 0
-P0.10_SOUT
-Wire Wire Line
-	3100 6250 3250 6250
-Wire Wire Line
-	3100 6350 3250 6350
 Text Label 1400 3900 0    50   ~ 0
 USBD+
 Text Label 1400 4000 0    50   ~ 0
@@ -730,45 +564,6 @@ F3 "RE" I L 14850 2350 50
 F4 "CAP_POT" I L 14850 2600 50 
 F5 "CE" I L 14850 2050 50 
 $EndSheet
-$Comp
-L Device:R_Small_US R6
-U 1 1 5DF64296
-P 11500 5700
-F 0 "R6" V 11400 5600 50  0000 L CNN
-F 1 "0" V 11400 5750 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 11500 5700 50  0001 C CNN
-F 3 "~" H 11500 5700 50  0001 C CNN
-	1    11500 5700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	11250 5700 11400 5700
-$Comp
-L Device:R_Small_US R7
-U 1 1 5DF718BA
-P 11850 5800
-F 0 "R7" V 11750 5700 50  0000 L CNN
-F 1 "0" V 11750 5850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 11850 5800 50  0001 C CNN
-F 3 "~" H 11850 5800 50  0001 C CNN
-	1    11850 5800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small_US R8
-U 1 1 5DF71EBE
-P 12200 5900
-F 0 "R8" V 12100 5800 50  0000 L CNN
-F 1 "0" V 12100 5950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 12200 5900 50  0001 C CNN
-F 3 "~" H 12200 5900 50  0001 C CNN
-	1    12200 5900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	11250 5800 11750 5800
-Wire Wire Line
-	11250 5900 12100 5900
 Text Label 11600 5700 0    50   ~ 0
 CE1
 Text Label 11950 5800 0    50   ~ 0
@@ -793,7 +588,7 @@ Wire Wire Line
 Text Label 12300 5900 0    50   ~ 0
 WE1
 Text Label 11400 6500 0    50   ~ 0
-CAP_POT0
+CAP_POT1
 Wire Wire Line
 	11250 6500 11400 6500
 Wire Wire Line
@@ -1018,32 +813,13 @@ Wire Notes Line
 	2500 3150 2500 550 
 Text Notes 3250 3050 0    50   ~ 0
 Decoupling Caps where space was tight
-Wire Wire Line
-	1200 5700 1900 5700
-Wire Wire Line
-	1200 6250 1200 5700
-Connection ~ 1200 5700
-Wire Wire Line
-	1100 5700 1200 5700
-Wire Wire Line
-	800  5700 700  5700
-Wire Wire Line
-	1100 6250 1200 6250
-Connection ~ 1200 6250
-Wire Wire Line
-	700  5700 700  6250
-Wire Wire Line
-	800  6250 700  6250
-Connection ~ 700  6250
-Wire Wire Line
-	700  6250 700  7650
 $Comp
 L Device:Crystal_GND24 Y1
 U 1 1 5E023AA8
 P 3000 3950
 F 0 "Y1" H 2700 4250 50  0000 L CNN
 F 1 "32MHz" H 2600 4150 50  0000 L CNN
-F 2 "" H 3000 3950 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM10-4Pin_2.5x2.0mm" H 3000 3950 50  0001 C CNN
 F 3 "~" H 3000 3950 50  0001 C CNN
 	1    3000 3950
 	1    0    0    -1  
@@ -1055,7 +831,7 @@ L Device:C C4
 U 1 1 5E02F21A
 P 2700 4100
 F 0 "C4" H 2450 4100 50  0000 L CNN
-F 1 "7pF" H 2400 4000 50  0000 L CNN
+F 1 "6pF" H 2400 4000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2738 3950 50  0001 C CNN
 F 3 "~" H 2700 4100 50  0001 C CNN
 	1    2700 4100
@@ -1066,7 +842,7 @@ L Device:C C13
 U 1 1 5E030EC2
 P 3300 4100
 F 0 "C13" H 3450 4100 50  0000 L CNN
-F 1 "7pF" H 3400 4000 50  0000 L CNN
+F 1 "6pF" H 3400 4000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3338 3950 50  0001 C CNN
 F 3 "~" H 3300 4100 50  0001 C CNN
 	1    3300 4100
@@ -1127,9 +903,9 @@ SWDIO
 Text Label 900  1050 2    50   ~ 0
 SWCLK
 Text Label 1700 950  0    50   ~ 0
-P0.10_SOUT
+UART_SOUT
 Text Label 1700 1050 0    50   ~ 0
-P0.11_SIN
+UART_SIN
 Text GLabel 2250 900  3    50   Input ~ 0
 DGND
 Wire Wire Line
@@ -1197,18 +973,6 @@ Wire Notes Line
 	2450 550  2450 2800
 Wire Notes Line
 	550  550  550  2800
-Wire Wire Line
-	2100 5700 2900 5700
-Wire Wire Line
-	3200 5700 3800 5700
-Text GLabel 5500 9600 3    50   Input ~ 0
-AVDDIN
-Text GLabel 5200 9600 3    50   Input ~ 0
-DVDDIN
-Wire Wire Line
-	5200 9600 5200 9550
-Wire Wire Line
-	5500 9600 5500 9550
 Wire Notes Line
 	550  5300 2250 5300
 Text GLabel 13300 8850 0    50   Input ~ 0
@@ -1514,39 +1278,6 @@ F 3 "~" H 3500 10700 50  0001 C CNN
 	1    3500 10700
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:D_Schottky D1
-U 1 1 5E2144F4
-P 6250 8000
-F 0 "D1" H 6250 8216 50  0000 C CNN
-F 1 "D_Schottky" H 6250 8125 50  0000 C CNN
-F 2 "" H 6250 8000 50  0001 C CNN
-F 3 "~" H 6250 8000 50  0001 C CNN
-	1    6250 8000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D2
-U 1 1 5E21463B
-P 6250 8250
-F 0 "D2" H 6250 8466 50  0000 C CNN
-F 1 "D_Schottky" H 6250 8375 50  0000 C CNN
-F 2 "" H 6250 8250 50  0001 C CNN
-F 3 "~" H 6250 8250 50  0001 C CNN
-	1    6250 8250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:SPX3819M5-L-3-3 U3
-U 1 1 5E21CD20
-P 7000 9700
-F 0 "U3" H 7000 10042 50  0000 C CNN
-F 1 "SPX3819M5-L-3-3" H 7000 9951 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7000 10025 50  0001 C CNN
-F 3 "https://www.exar.com/content/document.ashx?id=22106&languageid=1033&type=Datasheet&partnumber=SPX3819&filename=SPX3819.pdf&part=SPX3819" H 7000 9700 50  0001 C CNN
-	1    7000 9700
-	1    0    0    -1  
-$EndComp
 Text Label 3700 9850 0    50   ~ 0
 VBAT
 $Comp
@@ -1555,7 +1286,7 @@ U 1 1 5E24BF0E
 P 3500 10300
 F 0 "D3" V 3539 10183 50  0000 R CNN
 F 1 "LED" V 3448 10183 50  0000 R CNN
-F 2 "" H 3500 10300 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3500 10300 50  0001 C CNN
 F 3 "~" H 3500 10300 50  0001 C CNN
 	1    3500 10300
 	0    1    1    0   
@@ -1594,7 +1325,7 @@ U 1 1 5E1F7779
 P 650 9900
 F 0 "J6" H 568 9575 50  0000 C CNN
 F 1 "JST_PH" H 568 9666 50  0000 C CNN
-F 2 "" H 650 9900 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 650 9900 50  0001 C CNN
 F 3 "~" H 650 9900 50  0001 C CNN
 	1    650  9900
 	-1   0    0    1   
@@ -1635,4 +1366,31 @@ Wire Notes Line
 	500  11200 1500 11200
 Wire Notes Line
 	1500 10600 1500 11200
+$Sheet
+S 1100 5900 600  750 
+U 5E18BB0B
+F0 "FTDI" 50
+F1 "FTDI.sch" 50
+F2 "USBD+" I L 1100 6050 50 
+F3 "USBD-" I L 1100 6150 50 
+F4 "SIN" I L 1100 6250 50 
+F5 "SOUT" I L 1100 6350 50 
+F6 "5VUSB" I L 1100 6450 50 
+F7 "DGND" I L 1100 6550 50 
+$EndSheet
+Wire Wire Line
+	11250 5700 11600 5700
+Wire Wire Line
+	11250 5800 11950 5800
+Wire Wire Line
+	11250 5900 12300 5900
+NoConn ~ 1050 1150
+Text Label 12100 6100 0    50   ~ 0
+VBIAS1
+Wire Wire Line
+	12100 6100 11250 6100
+Text Label 12100 6200 0    50   ~ 0
+VZERO1
+Wire Wire Line
+	12100 6200 11250 6200
 $EndSCHEMATC

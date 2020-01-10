@@ -1,14 +1,15 @@
 EESchema Schematic File Version 4
+LIBS:aducm_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
-Title ""
+Sheet 3 4
+Title "ADuCM355 Template"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
+Comp "USACE ERDC"
+Comment1 "Keith Conley, Jason Ray"
 Comment2 ""
 Comment3 ""
 Comment4 ""
