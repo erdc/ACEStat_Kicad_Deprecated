@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:aducm_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -19,7 +20,7 @@ U 1 1 5DDA438D
 P 10000 4400
 F 0 "U1" H 10050 6315 50  0000 C CNN
 F 1 "aducm_355" H 10050 6224 50  0000 C CNN
-F 2 "ADUCM355:aducm355" H 10050 4350 50  0001 C CNN
+F 2 "aducm_board:aducm355" H 10050 4350 50  0001 C CNN
 F 3 "" H 10050 4350 50  0001 C CNN
 	1    10000 4400
 	1    0    0    -1  
@@ -912,4 +913,8 @@ AVDD
 Wire Wire Line
 	2250 800  2250 850 
 Connection ~ 2250 850 
+Text Label 8400 5300 0    50   ~ 0
+AIN3
+Wire Wire Line
+	8400 5300 8850 5300
 $EndSCHEMATC
