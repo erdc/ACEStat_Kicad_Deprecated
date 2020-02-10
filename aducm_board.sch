@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:aducm_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -817,7 +816,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 1050 1550 1050
 Wire Wire Line
-	1550 1150 1700 1150
+	1550 1150 1600 1150
 Wire Wire Line
 	1050 1050 900  1050
 Wire Wire Line
@@ -908,8 +907,6 @@ Text GLabel 1300 3200 2    50   Input ~ 0
 DGND
 Text GLabel 1300 3200 0    50   Input ~ 0
 AGND
-Text GLabel 2250 800  1    50   Input ~ 0
-AVDD
 Wire Wire Line
 	2250 800  2250 850 
 Connection ~ 2250 850 
@@ -917,4 +914,15 @@ Text Label 8400 5300 0    50   ~ 0
 AIN3
 Wire Wire Line
 	8400 5300 8850 5300
+Text GLabel 2250 800  1    50   Input ~ 0
+AGND
+Text GLabel 1700 1250 2    50   Input ~ 0
+AVDD
+Wire Wire Line
+	1700 1250 1600 1250
+Wire Wire Line
+	1600 1250 1600 1150
+Connection ~ 1600 1150
+Wire Wire Line
+	1600 1150 1700 1150
 $EndSCHEMATC

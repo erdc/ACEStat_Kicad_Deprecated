@@ -19,7 +19,7 @@ U 1 1 5DDA438D
 P 10000 4400
 F 0 "U1" H 10050 6315 50  0000 C CNN
 F 1 "aducm_355" H 10050 6224 50  0000 C CNN
-F 2 "ADUCM355:aducm355" H 10050 4350 50  0001 C CNN
+F 2 "aducm_board:aducm355" H 10050 4350 50  0001 C CNN
 F 3 "" H 10050 4350 50  0001 C CNN
 	1    10000 4400
 	1    0    0    -1  
@@ -907,9 +907,13 @@ Text GLabel 1300 3200 2    50   Input ~ 0
 DGND
 Text GLabel 1300 3200 0    50   Input ~ 0
 AGND
-Text GLabel 2250 800  1    50   Input ~ 0
-AVDD
 Wire Wire Line
 	2250 800  2250 850 
 Connection ~ 2250 850 
+Text Label 8400 5300 0    50   ~ 0
+AIN3
+Wire Wire Line
+	8400 5300 8850 5300
+Text GLabel 2250 800  1    50   Input ~ 0
+AGND
 $EndSCHEMATC
