@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:aducm_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "ADuCM355 Template"
 Date ""
 Rev ""
@@ -14,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L SIB_Footprint:aducm_355 U1
-U 1 1 5DDA438D
-P 10000 4400
-F 0 "U1" H 10050 6315 50  0000 C CNN
-F 1 "aducm_355" H 10050 6224 50  0000 C CNN
-F 2 "SIB_Generic:aducm355" H 10050 4350 50  0001 C CNN
-F 3 "" H 10050 4350 50  0001 C CNN
-	1    10000 4400
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GNDA #PWR01
 U 1 1 5DEA2182
@@ -926,4 +914,27 @@ Wire Wire Line
 Connection ~ 1600 1150
 Wire Wire Line
 	1600 1150 1700 1150
+$Sheet
+S 2600 6150 950  950 
+U 5EBF9349
+F0 "FTDI" 50
+F1 "FTDI.sch" 50
+F2 "USBD+" I L 2600 6350 50 
+F3 "USBD-" I L 2600 6550 50 
+F4 "SIN" I R 3550 6350 50 
+F5 "SOUT" I R 3550 6600 50 
+F6 "5VUSB" I L 2600 6850 50 
+F7 "DGND" I L 2600 6950 50 
+$EndSheet
+$Comp
+L SIB_Footprint:aducm_355 U1
+U 1 1 5DDA438D
+P 10000 4400
+F 0 "U1" H 10050 6315 50  0000 C CNN
+F 1 "aducm_355" H 10050 6224 50  0000 C CNN
+F 2 "SIB_Generic:aducm355" H 10050 4350 50  0001 C CNN
+F 3 "" H 10050 4350 50  0001 C CNN
+	1    10000 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
