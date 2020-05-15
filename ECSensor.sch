@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:aducm_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -55,7 +56,7 @@ F 3 "~" H 3700 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L chemcrab:EC_Sensor_Input_3_Pin J2
+L SIB_Footprint:EC_Sensor_Input_3_Pin J2
 U 1 1 5DF7EEA4
 P 4100 3600
 AR Path="/5DF7340A/5DF7EEA4" Ref="J2"  Part="1" 

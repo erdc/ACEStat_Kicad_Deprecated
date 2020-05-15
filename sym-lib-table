@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name aducm_board-rescue)(type Legacy)(uri ${KIPRJMOD}/aducm_board-rescue.lib)(options "")(descr ""))
-  (lib (name chemcrab)(type Legacy)(uri ${KIPRJMOD}/chemcrab.lib)(options "")(descr ""))
+  (lib (name SIB_Footprint)(type Legacy)(uri ${KIPRJMOD}/sib-kicad-libraries/SIB_Footprint.lib)(options "")(descr ""))
 )
