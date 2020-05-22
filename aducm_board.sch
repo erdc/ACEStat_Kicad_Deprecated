@@ -218,10 +218,6 @@ Text Label 8700 3700 2    50   ~ 0
 UART_SIN
 Wire Wire Line
 	8700 3700 8850 3700
-Text Label 8700 4300 2    50   ~ 0
-P1.5_CS
-Wire Wire Line
-	8700 4300 8850 4300
 Text Label 11400 5450 0    50   ~ 0
 CAP_POT0
 Wire Wire Line
@@ -395,18 +391,6 @@ Text Label 8850 6300 2    50   ~ 0
 XTALO
 Wire Wire Line
 	8850 6100 8550 6100
-Text Label 8700 3000 2    50   ~ 0
-P0.0_SCLK0
-Wire Wire Line
-	8850 3000 8700 3000
-Text Label 8700 3100 2    50   ~ 0
-P0.1_SPI0_MOSI
-Wire Wire Line
-	8850 3100 8700 3100
-Text Label 8700 3200 2    50   ~ 0
-P0.2_SPI0_MISO
-Wire Wire Line
-	8700 3200 8850 3200
 Text Label 11400 2800 0    50   ~ 0
 ~RESET
 Wire Wire Line
@@ -915,16 +899,17 @@ Connection ~ 1600 1150
 Wire Wire Line
 	1600 1150 1700 1150
 $Sheet
-S 2600 6150 950  950 
+S 3050 5650 950  950 
 U 5EBF9349
 F0 "FTDI" 50
 F1 "FTDI.sch" 50
-F2 "USBD+" I L 2600 6350 50 
-F3 "USBD-" I L 2600 6550 50 
-F4 "SIN" I R 3550 6350 50 
-F5 "SOUT" I R 3550 6600 50 
-F6 "5VUSB" I L 2600 6850 50 
-F7 "DGND" I L 2600 6950 50 
+F2 "USBD+" I L 3050 6200 50 
+F3 "USBD-" I L 3050 6000 50 
+F4 "SIN" I R 4000 5950 50 
+F5 "SOUT" I R 4000 6100 50 
+F6 "5VUSB" I L 3050 5800 50 
+F7 "DGND" I L 3050 6350 50 
+F8 "3V3VDD" B R 4000 5800 50 
 $EndSheet
 $Comp
 L SIB_Footprint:aducm_355 U1
@@ -937,4 +922,75 @@ F 3 "" H 10050 4350 50  0001 C CNN
 	1    10000 4400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J4
+U 1 1 5EC8B4AC
+P 2000 6100
+F 0 "J4" H 2107 6967 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 2107 6876 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A" H 2150 6100 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2150 6100 50  0001 C CNN
+	1    2000 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5500 2950 5500
+Wire Wire Line
+	2950 5500 2950 5800
+Wire Wire Line
+	2950 5800 3050 5800
+Wire Wire Line
+	2600 6000 2600 6050
+Wire Wire Line
+	2600 6200 2600 6250
+Wire Wire Line
+	3050 6000 2850 6000
+Wire Wire Line
+	2850 6000 2850 6050
+Wire Wire Line
+	2850 6050 2600 6050
+Connection ~ 2600 6050
+Wire Wire Line
+	2600 6050 2600 6100
+Wire Wire Line
+	3050 6200 2850 6200
+Wire Wire Line
+	2850 6200 2850 6250
+Wire Wire Line
+	2850 6250 2600 6250
+Connection ~ 2600 6250
+Wire Wire Line
+	2600 6250 2600 6300
+Wire Wire Line
+	3050 6350 2900 6350
+Wire Wire Line
+	2900 6350 2900 7000
+Wire Wire Line
+	2900 7000 2450 7000
+Text GLabel 2450 7150 3    50   Input ~ 0
+DGND
+Wire Wire Line
+	2450 7150 2450 7000
+Connection ~ 2450 7000
+Wire Wire Line
+	2450 7000 2000 7000
+Text Label 4350 6100 0    50   ~ 0
+UART_SOUT
+Wire Wire Line
+	4350 6100 4000 6100
+Text Label 4350 5950 0    50   ~ 0
+UART_SIN
+Wire Wire Line
+	4350 5950 4000 5950
+Text GLabel 4350 5800 2    50   Input ~ 0
+DVDD
+Wire Wire Line
+	4350 5800 4000 5800
+NoConn ~ 1700 7000
+NoConn ~ 2600 5800
+NoConn ~ 2600 5700
+NoConn ~ 2600 6700
+NoConn ~ 2600 6600
+Text Notes 1700 5200 0    50   ~ 0
+Amphenol 12401598E4#2A
 $EndSCHEMATC
