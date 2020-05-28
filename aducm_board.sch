@@ -1,9 +1,9 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "ADuCM355 Template"
 Date ""
 Rev ""
@@ -993,4 +993,45 @@ NoConn ~ 2600 6700
 NoConn ~ 2600 6600
 Text Notes 1700 5200 0    50   ~ 0
 Amphenol 12401598E4#2A
+$Sheet
+S 5400 650  850  850 
+U 5ED209B3
+F0 "VXO7803-500-M" 50
+F1 "VXO7803-500-M.sch" 50
+F2 "+VIN" I L 5400 800 50 
+F3 "+VOUT" O R 6250 1350 50 
+F4 "ON\\OFF" I L 5400 1350 50 
+F5 "GND" B R 6250 800 50 
+$EndSheet
+Text GLabel 3050 5500 2    50   Input ~ 0
+5VUSB
+Wire Wire Line
+	3050 5500 2950 5500
+Connection ~ 2950 5500
+Text GLabel 5250 800  0    50   Input ~ 0
+5VUSB
+Wire Wire Line
+	5400 800  5250 800 
+Text GLabel 6400 800  2    50   Input ~ 0
+DGND
+Wire Wire Line
+	6400 800  6250 800 
+Wire Wire Line
+	6400 1350 6250 1350
+Text GLabel 6400 1350 2    50   Input ~ 0
+DVDD
+Wire Wire Line
+	5250 800  5250 1350
+Wire Wire Line
+	5250 1350 5400 1350
+Wire Notes Line
+	6800 1700 6800 550 
+Wire Notes Line
+	6800 550  4900 550 
+Wire Notes Line
+	4900 550  4900 1700
+Wire Notes Line
+	4900 1700 6800 1700
+Text Notes 6350 1650 0    50   ~ 0
+5V to 3.3V
 $EndSCHEMATC
