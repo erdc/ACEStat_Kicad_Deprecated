@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\RDITLCRT\Documents\projects\chemcraap\workspace\aducm355_board\aducm_board.sch)
-    (date "5/28/2020 3:00:05 PM")
+    (date "5/29/2020 9:43:07 AM")
     (tool "Eeschema (5.0.2)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -437,7 +437,7 @@
         (field (name Field4) "Manufacturer Recommendations")
         (field (name Field5) 1.0)
         (field (name Field6) "CUI Inc."))
-      (libsource (lib VXO7803-500-M) (part VXO7803-500-M) (description ""))
+      (libsource (lib SIB_Footprint) (part VXO7803-500-M) (description ""))
       (sheetpath (names /VXO7803-500-M/) (tstamps /5ED209B3/))
       (tstamp 5ED341D9))
     (comp (ref C35)
@@ -448,8 +448,8 @@
       (sheetpath (names /VXO7803-500-M/) (tstamps /5ED209B3/))
       (tstamp 5ED34251))
     (comp (ref C36)
-      (value "22uf 50V")
-      (footprint Capacitor_SMD:C_0603_1608Metric)
+      (value "22uf 10V")
+      (footprint Capacitor_SMD:C_1206_3216Metric)
       (datasheet ~)
       (libsource (lib pspice) (part CAP) (description "Capacitor symbol for simulation only"))
       (sheetpath (names /VXO7803-500-M/) (tstamps /5ED209B3/))
@@ -600,6 +600,20 @@
         (pin (num 1) (name Pin_1) (type passive))
         (pin (num 2) (name Pin_2) (type passive))
         (pin (num 3) (name Pin_3) (type passive))))
+    (libpart (lib SIB_Footprint) (part VXO7803-500-M)
+      (fields
+        (field (name Reference) PS)
+        (field (name Value) VXO7803-500-M)
+        (field (name Footprint) CONV_VXO7803-500-M)
+        (field (name Datasheet) "3.5 mm")
+        (field (name Field4) "Manufacturer Recommendations")
+        (field (name Field5) 1.0)
+        (field (name Field6) "CUI Inc."))
+      (pins
+        (pin (num 1) (name +VIN) (type input))
+        (pin (num 2) (name GND) (type power_in))
+        (pin (num 3) (name +VO) (type output))
+        (pin (num 4) (name ON/OFF) (type input))))
     (libpart (lib SIB_Footprint) (part aducm_355)
       (fields
         (field (name Reference) U)
@@ -685,20 +699,6 @@
       (pins
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))))
-    (libpart (lib VXO7803-500-M) (part VXO7803-500-M)
-      (fields
-        (field (name Reference) PS)
-        (field (name Value) VXO7803-500-M)
-        (field (name Footprint) CONV_VXO7803-500-M)
-        (field (name Datasheet) "3.5 mm")
-        (field (name Field4) "Manufacturer Recommendations")
-        (field (name Field5) 1.0)
-        (field (name Field6) "CUI Inc."))
-      (pins
-        (pin (num 1) (name +VIN) (type input))
-        (pin (num 2) (name GND) (type power_in))
-        (pin (num 3) (name +VO) (type output))
-        (pin (num 4) (name ON/OFF) (type input))))
     (libpart (lib pspice) (part CAP)
       (aliases
         (alias C))
@@ -723,8 +723,6 @@
       (uri C:\Users\RDITLCRT\Documents\projects\chemcraap\workspace\aducm355_board/sib-kicad-libraries/SIB_Footprint.lib))
     (library (logical Switch)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Switch.lib"))
-    (library (logical VXO7803-500-M)
-      (uri C:\Users\RDITLCRT\Documents\projects\chemcraap\workspace\aducm355_board/sib-kicad-libraries/VXO7803-500-M.lib))
     (library (logical pspice)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/pspice.lib")))
   (nets
