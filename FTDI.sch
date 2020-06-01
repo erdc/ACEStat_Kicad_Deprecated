@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:aducm_board-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -99,14 +99,9 @@ Wire Wire Line
 Wire Wire Line
 	5900 2600 6250 2600
 Wire Wire Line
-	4850 1750 5000 1750
-Wire Wire Line
-	5000 1750 5000 1950
-Wire Wire Line
 	5350 1750 5200 1750
 Wire Wire Line
 	5200 1750 5200 1950
-Connection ~ 5000 1950
 Connection ~ 5200 1950
 Wire Wire Line
 	5200 1950 5200 2200
@@ -170,8 +165,6 @@ Text HLabel 6250 2500 2    50   Input ~ 0
 SIN
 Text HLabel 6250 2600 2    50   Input ~ 0
 SOUT
-Text Label 4850 1750 0    50   ~ 0
-3V3VOUT
 Text Label 3850 3200 0    50   ~ 0
 3V3VOUT
 Text HLabel 5350 1750 2    50   Input ~ 0
@@ -182,6 +175,4 @@ Text HLabel 4900 4450 3    50   Input ~ 0
 DGND
 Text HLabel 3800 4400 3    50   Input ~ 0
 DGND
-Text HLabel 4850 1750 0    50   BiDi ~ 0
-3V3VDD
 $EndSCHEMATC

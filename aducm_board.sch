@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:aducm_board-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -910,7 +910,6 @@ F4 "SIN" I R 4000 5950 50
 F5 "SOUT" I R 4000 6100 50 
 F6 "5VUSB" I L 3050 5800 50 
 F7 "DGND" I L 3050 6350 50 
-F8 "3V3VDD" B R 4000 5800 50 
 $EndSheet
 $Comp
 L SIB_Footprint:aducm_355 U1
@@ -983,10 +982,6 @@ Text Label 4350 5950 0    50   ~ 0
 UART_SIN
 Wire Wire Line
 	4350 5950 4000 5950
-Text GLabel 4350 5800 2    50   Input ~ 0
-DVDD
-Wire Wire Line
-	4350 5800 4000 5800
 NoConn ~ 1700 7000
 NoConn ~ 2600 5800
 NoConn ~ 2600 5700
