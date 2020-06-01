@@ -761,99 +761,87 @@ Wire Notes Line
 Wire Notes Line
 	2300 4850 2300 3200
 $Comp
-L Connector_Generic:Conn_02x04_Odd_Even J1
+L Connector_Generic:Conn_02x10_Odd_Even J1
 U 1 1 5E1C696B
-P 1250 950
-F 0 "J1" H 1300 1267 50  0000 C CNN
-F 1 "Conn_02x04_Odd_Even" H 1300 1176 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Horizontal" H 1250 950 50  0001 C CNN
-F 3 "~" H 1250 950 50  0001 C CNN
-	1    1250 950 
+P 1750 1550
+F 0 "J1" H 1800 1867 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" V 1300 900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 1750 1550 50  0001 C CNN
+F 3 "~" H 1750 1550 50  0001 C CNN
+	1    1750 1550
 	1    0    0    -1  
 $EndComp
-Text Label 900  850  2    50   ~ 0
+Text Label 1450 1850 2    50   ~ 0
 ~RESET
-Wire Wire Line
-	900  850  1050 850 
-Text Label 900  950  2    50   ~ 0
+Text Label 1450 1450 2    50   ~ 0
 SWDIO
-Text Label 900  1050 2    50   ~ 0
+Text Label 1450 1550 2    50   ~ 0
 SWCLK
-Text Label 1700 950  0    50   ~ 0
+Text Label 1450 1950 2    50   ~ 0
 UART_SOUT
-Text Label 1700 1050 0    50   ~ 0
+Text Label 1450 1350 2    50   ~ 0
 UART_SIN
-Text GLabel 2250 900  3    50   Input ~ 0
+Text GLabel 2350 1500 3    50   Input ~ 0
 DGND
 Wire Wire Line
-	1550 950  1700 950 
+	1550 1950 1450 1950
 Wire Wire Line
-	1700 1050 1550 1050
-Wire Wire Line
-	1550 1150 1600 1150
-Wire Wire Line
-	1050 1050 900  1050
-Wire Wire Line
-	900  950  1050 950 
+	1450 1350 1550 1350
 Wire Notes Line
 	550  550  2450 550 
 Text Notes 1500 2750 0    50   ~ 0
-6-pin J-Tag Connector
+20-pin J-Tag Connector
 $Comp
 L Device:R_Small_US R1
 U 1 1 5E26FED1
-P 1250 2100
-F 0 "R1" H 1050 2150 50  0000 L CNN
-F 1 "100k" H 1000 2050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1250 2100 50  0001 C CNN
-F 3 "~" H 1250 2100 50  0001 C CNN
-	1    1250 2100
+P 800 2300
+F 0 "R1" H 600 2350 50  0000 L CNN
+F 1 "100k" H 550 2250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 800 2300 50  0001 C CNN
+F 3 "~" H 800 2300 50  0001 C CNN
+	1    800  2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R2
 U 1 1 5E29740B
-P 1600 2100
-F 0 "R2" H 1400 2150 50  0000 L CNN
-F 1 "100k" H 1350 2050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 2100 50  0001 C CNN
-F 3 "~" H 1600 2100 50  0001 C CNN
-	1    1600 2100
+P 1150 2300
+F 0 "R2" H 950 2350 50  0000 L CNN
+F 1 "100k" H 900 2250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1150 2300 50  0001 C CNN
+F 3 "~" H 1150 2300 50  0001 C CNN
+	1    1150 2300
 	1    0    0    -1  
 $EndComp
-Text GLabel 1700 1150 2    50   Input ~ 0
+Text GLabel 1750 1000 1    50   Input ~ 0
 DVDD
-Text GLabel 1450 1750 1    50   Input ~ 0
+Text GLabel 1000 1850 1    50   Input ~ 0
 DVDD
 Wire Wire Line
-	1250 2000 1250 1900
-Text Label 1250 2350 3    50   ~ 0
+	800  2200 800  2100
+Text Label 800  2550 3    50   ~ 0
 SWDIO
 Wire Wire Line
-	1250 2350 1250 2200
-Text Label 1600 2350 3    50   ~ 0
+	800  2550 800  2400
+Text Label 1150 2550 3    50   ~ 0
 SWCLK
 Wire Wire Line
-	1600 2200 1600 2350
+	1150 2400 1150 2550
 Wire Wire Line
-	1250 1900 1450 1900
+	800  2100 1000 2100
 Wire Wire Line
-	1450 1900 1450 1750
+	1000 2100 1000 1850
 Wire Wire Line
-	1450 1900 1600 1900
-Connection ~ 1450 1900
+	1000 2100 1150 2100
+Connection ~ 1000 2100
 Wire Wire Line
-	1600 1900 1600 2000
+	1150 2100 1150 2200
 Wire Notes Line
 	2450 2800 550  2800
 Wire Notes Line
 	2450 550  2450 2800
 Wire Notes Line
 	550  550  550  2800
-Wire Wire Line
-	1550 850  2250 850 
-Wire Wire Line
-	2250 850  2250 900 
 Wire Notes Line
 	1550 2850 550  2850
 Wire Notes Line
@@ -868,7 +856,6 @@ Wire Wire Line
 	11250 5800 11950 5800
 Wire Wire Line
 	11250 5900 12300 5900
-NoConn ~ 1050 1150
 Text Label 12100 6100 0    50   ~ 0
 VBIAS1
 Wire Wire Line
@@ -881,24 +868,14 @@ Text GLabel 1300 3200 2    50   Input ~ 0
 DGND
 Text GLabel 1300 3200 0    50   Input ~ 0
 AGND
-Wire Wire Line
-	2250 800  2250 850 
-Connection ~ 2250 850 
 Text Label 8400 5300 0    50   ~ 0
 AIN3
 Wire Wire Line
 	8400 5300 8850 5300
-Text GLabel 2250 800  1    50   Input ~ 0
+Text GLabel 2350 1400 1    50   Input ~ 0
 AGND
-Text GLabel 1700 1250 2    50   Input ~ 0
+Text GLabel 1850 1000 1    50   Input ~ 0
 AVDD
-Wire Wire Line
-	1700 1250 1600 1250
-Wire Wire Line
-	1600 1250 1600 1150
-Connection ~ 1600 1150
-Wire Wire Line
-	1600 1150 1700 1150
 $Sheet
 S 3050 5650 950  950 
 U 5EBF9349
@@ -1030,4 +1007,60 @@ Wire Notes Line
 	4900 1700 6800 1700
 Text Notes 6350 1650 0    50   ~ 0
 5V to 3.3V
+Wire Wire Line
+	1450 1850 1550 1850
+Wire Wire Line
+	1450 1450 1550 1450
+Wire Wire Line
+	1450 1550 1550 1550
+Wire Wire Line
+	2350 1400 2350 1450
+Wire Wire Line
+	1750 1000 1800 1000
+Wire Wire Line
+	1800 1000 1800 1050
+Connection ~ 1800 1000
+Wire Wire Line
+	1800 1000 1850 1000
+Wire Wire Line
+	2050 2050 2050 1950
+Wire Wire Line
+	2050 1950 2050 1850
+Connection ~ 2050 1950
+Wire Wire Line
+	2050 1850 2050 1750
+Connection ~ 2050 1850
+Wire Wire Line
+	2050 1750 2050 1650
+Connection ~ 2050 1750
+Wire Wire Line
+	2050 1550 2050 1650
+Connection ~ 2050 1650
+Wire Wire Line
+	2050 1250 2050 1350
+Wire Wire Line
+	2050 1350 2050 1450
+Connection ~ 2050 1350
+Wire Wire Line
+	2050 1450 2050 1550
+Connection ~ 2050 1450
+Connection ~ 2050 1550
+Wire Wire Line
+	2350 1450 2050 1450
+Connection ~ 2350 1450
+Wire Wire Line
+	2350 1450 2350 1500
+NoConn ~ 1550 1250
+NoConn ~ 1550 1650
+NoConn ~ 1550 1750
+NoConn ~ 1550 2050
+Wire Wire Line
+	2050 1150 2050 1050
+Wire Wire Line
+	2050 1050 1800 1050
+Wire Wire Line
+	1550 1050 1550 1150
+Connection ~ 1800 1050
+Wire Wire Line
+	1800 1050 1550 1050
 $EndSCHEMATC
