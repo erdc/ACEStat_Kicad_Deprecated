@@ -1102,15 +1102,15 @@ Text Label 2900 10000 3    50   ~ 0
 VBIAS0
 Text Label 2800 10000 3    50   ~ 0
 VZERO0
-Text Label 1900 10000 3    50   ~ 0
+Text Label 4000 10000 3    50   ~ 0
 CE1
-Text Label 2000 10000 3    50   ~ 0
+Text Label 3900 10000 3    50   ~ 0
 RE1
 Text Label 2100 10000 3    50   ~ 0
 WE1
-Text Label 2200 10000 3    50   ~ 0
+Text Label 3900 9100 1    50   ~ 0
 VBIAS1
-Text Label 2300 10000 3    50   ~ 0
+Text Label 4000 9100 1    50   ~ 0
 VZERO1
 Text Label 7500 3000 0    50   ~ 0
 P0.0_SPI0_CLK
@@ -1168,7 +1168,7 @@ Text Label 2700 10000 3    50   ~ 0
 P1.0
 Text Label 2600 10000 3    50   ~ 0
 P1.1
-Text Label 1700 9100 1    50   ~ 0
+Text Label 3800 10000 3    50   ~ 0
 P1.2_SPI1_CLK
 Text Label 1800 9100 1    50   ~ 0
 P1.3_SPI1_MOSI
@@ -1178,7 +1178,7 @@ Text Label 2000 9100 1    50   ~ 0
 P1.5_SPI1_~CS
 Text Label 2700 9100 1    50   ~ 0
 P2.4
-Text Label 2100 9100 1    50   ~ 0
+Text Label 3800 9100 1    50   ~ 0
 PWM0
 Text Label 3600 9100 1    50   ~ 0
 PWM1
@@ -1237,15 +1237,15 @@ Wire Wire Line
 Wire Wire Line
 	2800 10000 2800 9800
 Wire Wire Line
-	1900 10000 1900 9800
+	4000 10000 4000 9800
 Wire Wire Line
-	2000 9800 2000 10000
+	3900 9800 3900 10000
 Wire Wire Line
 	2100 10000 2100 9800
 Wire Wire Line
-	2200 9800 2200 10000
+	3900 9300 3900 9100
 Wire Wire Line
-	2300 10000 2300 9800
+	4000 9100 4000 9300
 Wire Wire Line
 	3500 9100 3500 9300
 Wire Wire Line
@@ -1261,7 +1261,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 9300 3600 9100
 Wire Wire Line
-	2100 9100 2100 9300
+	3800 9100 3800 9300
 Wire Wire Line
 	2000 9300 2000 9100
 Wire Wire Line
@@ -1269,21 +1269,21 @@ Wire Wire Line
 Wire Wire Line
 	1800 9300 1800 9100
 Wire Wire Line
-	1700 9100 1700 9300
+	3800 10000 3800 9800
 Text GLabel 1900 9100 1    50   Input ~ 0
 DVDD
-Text GLabel 4000 10050 3    50   Input ~ 0
+Text GLabel 2000 10050 3    50   Input ~ 0
 DGND
 Wire Wire Line
-	4000 10050 4000 9800
-Text GLabel 3900 10050 3    50   Input ~ 0
+	2000 10050 2000 9800
+Text GLabel 1900 10050 3    50   Input ~ 0
 DGND
-Text GLabel 3800 10050 3    50   Input ~ 0
+Text GLabel 1700 9050 1    50   Input ~ 0
 DGND
 Wire Wire Line
-	3900 9800 3900 10050
+	1900 9800 1900 10050
 Wire Wire Line
-	3800 9800 3800 10050
+	1700 9300 1700 9050
 Wire Wire Line
 	1600 9800 1600 10000
 Wire Wire Line
@@ -1306,20 +1306,20 @@ Text GLabel 3600 10050 3    50   Input ~ 0
 DGND
 Wire Wire Line
 	3600 10050 3600 9800
-Text GLabel 3800 9100 1    50   Input ~ 0
+Text GLabel 2100 9100 1    50   Input ~ 0
 DVDD
-Text GLabel 3900 9100 1    50   Input ~ 0
+Text GLabel 2300 10000 3    50   Input ~ 0
 DVDD
-Text GLabel 4000 9100 1    50   Input ~ 0
+Text GLabel 2200 10000 3    50   Input ~ 0
 DVDD
 Wire Wire Line
 	3700 9300 3700 9100
 Wire Wire Line
-	4000 9300 4000 9100
+	2200 9800 2200 10000
 Wire Wire Line
-	3900 9100 3900 9300
+	2300 10000 2300 9800
 Wire Wire Line
-	3800 9300 3800 9100
+	2100 9300 2100 9100
 Wire Wire Line
 	1900 9300 1900 9100
 Text GLabel 3500 10050 3    50   Input ~ 0
