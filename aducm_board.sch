@@ -1074,14 +1074,10 @@ F 3 "~" H 2800 9600 50  0001 C CNN
 	1    2800 9600
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1400 9300 0    50   Input ~ 0
-DGND
 Text GLabel 3200 9100 1    50   Input ~ 0
 DVDD
 Text Label 2300 9100 1    50   ~ 0
 UART_SIN
-Wire Wire Line
-	1600 9300 1400 9300
 Wire Wire Line
 	3200 9300 3200 9100
 Wire Wire Line
@@ -1092,11 +1088,11 @@ Wire Wire Line
 	2500 9300 2500 9100
 Text Label 3700 9100 1    50   ~ 0
 ~RESET
-Text Label 3200 10000 3    50   ~ 0
+Text Label 1600 10000 3    50   ~ 0
 CE0
-Text Label 3100 10000 3    50   ~ 0
+Text Label 1800 10000 3    50   ~ 0
 RE0
-Text Label 3000 10000 3    50   ~ 0
+Text Label 1700 10000 3    50   ~ 0
 WE0
 Text Label 2900 10000 3    50   ~ 0
 VBIAS0
@@ -1104,9 +1100,9 @@ Text Label 2800 10000 3    50   ~ 0
 VZERO0
 Text Label 4000 10000 3    50   ~ 0
 CE1
-Text Label 3900 10000 3    50   ~ 0
+Text Label 3800 10000 3    50   ~ 0
 RE1
-Text Label 2100 10000 3    50   ~ 0
+Text Label 3900 10000 3    50   ~ 0
 WE1
 Text Label 3900 9100 1    50   ~ 0
 VBIAS1
@@ -1164,17 +1160,17 @@ Text Label 7500 4500 0    50   ~ 0
 PWM0
 Text Label 7500 4600 0    50   ~ 0
 PWM1
-Text Label 2700 10000 3    50   ~ 0
+Text Label 2000 10000 3    50   ~ 0
 P1.0
-Text Label 2600 10000 3    50   ~ 0
+Text Label 1900 10000 3    50   ~ 0
 P1.1
-Text Label 3800 10000 3    50   ~ 0
+Text Label 3700 10000 3    50   ~ 0
 P1.2_SPI1_CLK
-Text Label 1800 9100 1    50   ~ 0
+Text Label 2000 9100 1    50   ~ 0
 P1.3_SPI1_MOSI
 Text Label 2800 9100 1    50   ~ 0
 P1.4_SPI1_MISO
-Text Label 2000 9100 1    50   ~ 0
+Text Label 2100 9100 1    50   ~ 0
 P1.5_SPI1_~CS
 Text Label 2700 9100 1    50   ~ 0
 P2.4
@@ -1210,9 +1206,9 @@ Text Label 8050 5500 0    50   ~ 0
 AIN5
 Text Label 8050 5600 0    50   ~ 0
 AIN6
-Text Label 2500 10000 3    50   ~ 0
+Text Label 2300 10000 3    50   ~ 0
 AIN3
-Text Label 2400 10000 3    50   ~ 0
+Text Label 2100 10000 3    50   ~ 0
 AIN5
 Text Label 2200 9100 1    50   ~ 0
 AIN6
@@ -1227,11 +1223,11 @@ Wire Wire Line
 Wire Wire Line
 	8050 5600 8850 5600
 Wire Wire Line
-	3200 9800 3200 10000
+	3200 9800 3200 10050
 Wire Wire Line
-	3100 10000 3100 9800
+	3100 10050 3100 9800
 Wire Wire Line
-	3000 9800 3000 10000
+	3000 9800 3000 10050
 Wire Wire Line
 	2900 10000 2900 9800
 Wire Wire Line
@@ -1270,20 +1266,18 @@ Wire Wire Line
 	1800 9300 1800 9100
 Wire Wire Line
 	3800 10000 3800 9800
-Text GLabel 1900 9100 1    50   Input ~ 0
+Text GLabel 1800 9100 1    50   Input ~ 0
 DVDD
-Text GLabel 2000 10050 3    50   Input ~ 0
+Text GLabel 3200 10050 3    50   Input ~ 0
 DGND
 Wire Wire Line
-	2000 10050 2000 9800
-Text GLabel 1900 10050 3    50   Input ~ 0
-DGND
-Text GLabel 1700 9050 1    50   Input ~ 0
+	2000 10000 2000 9800
+Text GLabel 3100 10050 3    50   Input ~ 0
 DGND
 Wire Wire Line
-	1900 9800 1900 10050
+	1900 9800 1900 10000
 Wire Wire Line
-	1700 9300 1700 9050
+	1700 9300 1700 9100
 Wire Wire Line
 	1600 9800 1600 10000
 Wire Wire Line
@@ -1298,19 +1292,19 @@ Wire Wire Line
 	2600 10000 2600 9800
 Wire Wire Line
 	2700 10000 2700 9800
-Text GLabel 3700 10050 3    50   Input ~ 0
+Text GLabel 3000 10050 3    50   Input ~ 0
 DGND
 Wire Wire Line
-	3700 10050 3700 9800
+	3700 10000 3700 9800
 Text GLabel 3600 10050 3    50   Input ~ 0
 DGND
 Wire Wire Line
 	3600 10050 3600 9800
-Text GLabel 2100 9100 1    50   Input ~ 0
+Text GLabel 1900 9100 1    50   Input ~ 0
 DVDD
-Text GLabel 2300 10000 3    50   Input ~ 0
+Text GLabel 2700 10000 3    50   Input ~ 0
 DVDD
-Text GLabel 2200 10000 3    50   Input ~ 0
+Text GLabel 2600 10000 3    50   Input ~ 0
 DVDD
 Wire Wire Line
 	3700 9300 3700 9100
@@ -1348,12 +1342,16 @@ Wire Wire Line
 	1700 10000 1700 9800
 Wire Wire Line
 	1800 9800 1800 10000
-Text Label 1600 10000 3    50   ~ 0
+Text Label 2200 10000 3    50   ~ 0
 AIN2
-Text Label 1700 10000 3    50   ~ 0
+Text Label 2400 10000 3    50   ~ 0
 AIN1
-Text Label 1800 10000 3    50   ~ 0
+Text Label 2500 10000 3    50   ~ 0
 AIN0
-Text Notes 1950 8400 0    50   ~ 0
-PIN 16 to 44 is fine.\nRest are subject to CHANGE
+Text GLabel 1700 9100 1    50   Input ~ 0
+DVDD
+Text GLabel 1600 9100 1    50   Input ~ 0
+DVDD
+Wire Wire Line
+	1600 9300 1600 9100
 $EndSCHEMATC
