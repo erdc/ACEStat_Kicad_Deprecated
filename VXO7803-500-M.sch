@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:aducm_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 5 6
 Title ""
 Date ""
 Rev ""

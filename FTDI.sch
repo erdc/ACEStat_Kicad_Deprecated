@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:aducm_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 3 5
 Title "ADuCM355 Template"
 Date ""
 Rev ""
@@ -19,11 +18,11 @@ L Device:C C?
 U 1 1 5E190CFD
 P 6150 1950
 AR Path="/5E190CFD" Ref="C?"  Part="1" 
-AR Path="/5E18BB0B/5E190CFD" Ref="C12"  Part="1" 
-AR Path="/5EBF9349/5E190CFD" Ref="C34"  Part="1" 
-F 0 "C34" V 5900 1900 50  0000 L CNN
+AR Path="/5E18BB0B/5E190CFD" Ref="C?"  Part="1" 
+AR Path="/5EBF9349/5E190CFD" Ref="C41"  Part="1" 
+F 0 "C41" V 5900 1900 50  0000 L CNN
 F 1 "0.1uF" V 6000 1850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6188 1800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6188 1800 50  0001 C CNN
 F 3 "~" H 6150 1950 50  0001 C CNN
 	1    6150 1950
 	0    1    1    0   
@@ -33,7 +32,7 @@ L Interface_USB:FT232RL U?
 U 1 1 5E190D03
 P 5100 3200
 AR Path="/5E190D03" Ref="U?"  Part="1" 
-AR Path="/5E18BB0B/5E190D03" Ref="U2"  Part="1" 
+AR Path="/5E18BB0B/5E190D03" Ref="U?"  Part="1" 
 AR Path="/5EBF9349/5E190D03" Ref="U2"  Part="1" 
 F 0 "U2" H 5100 4381 50  0000 C CNN
 F 1 "FT232RL" H 5100 4290 50  0000 C CNN
@@ -75,11 +74,11 @@ L Device:C C?
 U 1 1 5E190D1F
 P 4050 1950
 AR Path="/5E190D1F" Ref="C?"  Part="1" 
-AR Path="/5E18BB0B/5E190D1F" Ref="C1"  Part="1" 
-AR Path="/5EBF9349/5E190D1F" Ref="C32"  Part="1" 
-F 0 "C32" V 3800 1900 50  0000 L CNN
+AR Path="/5E18BB0B/5E190D1F" Ref="C?"  Part="1" 
+AR Path="/5EBF9349/5E190D1F" Ref="C39"  Part="1" 
+F 0 "C39" V 3800 1900 50  0000 L CNN
 F 1 "0.1uF" V 3900 1850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4088 1800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4088 1800 50  0001 C CNN
 F 3 "~" H 4050 1950 50  0001 C CNN
 	1    4050 1950
 	0    1    1    0   
@@ -121,11 +120,11 @@ L Device:C C?
 U 1 1 5E190D4F
 P 4050 2500
 AR Path="/5E190D4F" Ref="C?"  Part="1" 
-AR Path="/5E18BB0B/5E190D4F" Ref="C2"  Part="1" 
-AR Path="/5EBF9349/5E190D4F" Ref="C33"  Part="1" 
-F 0 "C33" V 4300 2450 50  0000 L CNN
+AR Path="/5E18BB0B/5E190D4F" Ref="C?"  Part="1" 
+AR Path="/5EBF9349/5E190D4F" Ref="C40"  Part="1" 
+F 0 "C40" V 4300 2450 50  0000 L CNN
 F 1 "0.1uF" V 4200 2400 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4088 2350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4088 2350 50  0001 C CNN
 F 3 "~" H 4050 2500 50  0001 C CNN
 	1    4050 2500
 	0    -1   -1   0   
