@@ -1,4 +1,4 @@
-update=1/27/2021 10:53:57 AM
+update=2/2/2021 11:45:33 AM
 version=1
 last_client=kicad
 [general]
@@ -28,8 +28,8 @@ PageLayoutDescrFile=
 LastNetListRead=aducm_board.net
 CopperLayerCount=6
 BoardThickness=1.6
-AllowMicroVias=0
-AllowBlindVias=0
+AllowMicroVias=1
+AllowBlindVias=1
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
 MinTrackWidth=0.07619999999999999
@@ -84,20 +84,20 @@ Name=F.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=TOP_SIGNAL
-Type=0
-Enabled=1
-[pcbnew/Layer.In2.Cu]
 Name=GND
 Type=1
 Enabled=1
+[pcbnew/Layer.In2.Cu]
+Name=ANALOG_SIGNAL
+Type=0
+Enabled=1
 [pcbnew/Layer.In3.Cu]
-Name=POWER
-Type=1
+Name=DIGITAL_SIGNAL
+Type=0
 Enabled=1
 [pcbnew/Layer.In4.Cu]
-Name=BOTTOM_SIGNAL
-Type=0
+Name=POWER
+Type=1
 Enabled=1
 [pcbnew/Layer.In5.Cu]
 Name=In5.Cu

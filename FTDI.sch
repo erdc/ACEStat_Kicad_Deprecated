@@ -16,162 +16,193 @@ $EndDescr
 $Comp
 L Device:C C?
 U 1 1 5E190CFD
-P 6150 1950
+P 4500 2200
 AR Path="/5E190CFD" Ref="C?"  Part="1" 
 AR Path="/5E18BB0B/5E190CFD" Ref="C?"  Part="1" 
 AR Path="/5EBF9349/5E190CFD" Ref="C38"  Part="1" 
-F 0 "C38" V 5900 1900 50  0000 L CNN
-F 1 "0.1uF" V 6000 1850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 6188 1800 50  0001 C CNN
-F 3 "~" H 6150 1950 50  0001 C CNN
-	1    6150 1950
-	0    1    1    0   
+F 0 "C38" V 4250 2150 50  0000 L CNN
+F 1 "0.1uF" V 4350 2100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4538 2050 50  0001 C CNN
+F 3 "~" H 4500 2200 50  0001 C CNN
+	1    4500 2200
+	-1   0    0    1   
 $EndComp
-$Comp
-L Interface_USB:FT232RL U?
-U 1 1 5E190D03
-P 5100 3200
-AR Path="/5E190D03" Ref="U?"  Part="1" 
-AR Path="/5E18BB0B/5E190D03" Ref="U?"  Part="1" 
-AR Path="/5EBF9349/5E190D03" Ref="U2"  Part="1" 
-F 0 "U2" H 5100 4381 50  0000 C CNN
-F 1 "FT232RL" H 5100 4290 50  0000 C CNN
-F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 6200 2300 50  0001 C CNN
-F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf" H 5100 3200 50  0001 C CNN
-	1    5100 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 4200 4900 4300
-Wire Wire Line
-	4900 4300 5100 4300
-Wire Wire Line
-	5100 4300 5100 4200
-Connection ~ 4900 4300
-Wire Wire Line
-	4900 4300 4900 4450
-Wire Wire Line
-	5100 4300 5200 4300
-Wire Wire Line
-	5200 4300 5200 4200
-Connection ~ 5100 4300
-Wire Wire Line
-	5200 4300 5300 4300
-Wire Wire Line
-	5300 4300 5300 4200
-Connection ~ 5200 4300
-NoConn ~ 4300 3400
-NoConn ~ 4300 3600
-Wire Wire Line
-	4300 3900 3800 3900
-Connection ~ 3800 3900
-Wire Wire Line
-	3800 3900 3800 4400
-Wire Wire Line
-	4300 3200 3850 3200
 $Comp
 L Device:C C?
 U 1 1 5E190D1F
-P 4050 1950
+P 4250 2900
 AR Path="/5E190D1F" Ref="C?"  Part="1" 
 AR Path="/5E18BB0B/5E190D1F" Ref="C?"  Part="1" 
 AR Path="/5EBF9349/5E190D1F" Ref="C36"  Part="1" 
-F 0 "C36" V 3800 1900 50  0000 L CNN
-F 1 "0.1uF" V 3900 1850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4088 1800 50  0001 C CNN
-F 3 "~" H 4050 1950 50  0001 C CNN
-	1    4050 1950
-	0    1    1    0   
+F 0 "C36" V 4000 2850 50  0000 L CNN
+F 1 "0.1uF" V 4100 2800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4288 2750 50  0001 C CNN
+F 3 "~" H 4250 2900 50  0001 C CNN
+	1    4250 2900
+	1    0    0    -1  
 $EndComp
-NoConn ~ 5900 3500
-NoConn ~ 5900 3600
-NoConn ~ 5900 3700
-NoConn ~ 5900 3800
-NoConn ~ 5900 3900
-NoConn ~ 5900 2700
-NoConn ~ 5900 2900
-NoConn ~ 5900 3000
-NoConn ~ 5900 3100
-NoConn ~ 5900 3200
-Wire Wire Line
-	6250 2500 5900 2500
-Wire Wire Line
-	5900 2600 6250 2600
-Wire Wire Line
-	5350 1750 5200 1750
-Wire Wire Line
-	5200 1750 5200 1950
-Connection ~ 5200 1950
-Wire Wire Line
-	5200 1950 5200 2200
-Wire Wire Line
-	5000 1950 5000 2200
-Wire Wire Line
-	6900 1950 6900 2800
-Connection ~ 6900 2800
-Wire Wire Line
-	6900 2800 6900 2900
-Wire Wire Line
-	5900 2800 6900 2800
-Text Notes 5400 4600 0    50   ~ 0
-FTDI USB to UART
 $Comp
 L Device:C C?
 U 1 1 5E190D4F
-P 4050 2500
+P 4250 4850
 AR Path="/5E190D4F" Ref="C?"  Part="1" 
 AR Path="/5E18BB0B/5E190D4F" Ref="C?"  Part="1" 
 AR Path="/5EBF9349/5E190D4F" Ref="C37"  Part="1" 
-F 0 "C37" V 4300 2450 50  0000 L CNN
-F 1 "0.1uF" V 4200 2400 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4088 2350 50  0001 C CNN
-F 3 "~" H 4050 2500 50  0001 C CNN
-	1    4050 2500
-	0    -1   -1   0   
+F 0 "C37" V 4500 4800 50  0000 L CNN
+F 1 "0.1uF" V 4400 4750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4288 4700 50  0001 C CNN
+F 3 "~" H 4250 4850 50  0001 C CNN
+	1    4250 4850
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4150 2900 4300 2900
-Wire Wire Line
-	4150 2800 4300 2800
-Wire Wire Line
-	4300 1950 5000 1950
-Wire Wire Line
-	4300 2500 4300 1950
-Connection ~ 4300 1950
-Wire Wire Line
-	4200 1950 4300 1950
-Wire Wire Line
-	3900 1950 3800 1950
-Wire Wire Line
-	4200 2500 4300 2500
-Connection ~ 4300 2500
-Wire Wire Line
-	3800 1950 3800 2500
-Wire Wire Line
-	3900 2500 3800 2500
-Connection ~ 3800 2500
-Wire Wire Line
-	3800 2500 3800 3900
-Wire Wire Line
-	5200 1950 6000 1950
-Wire Wire Line
-	6300 1950 6900 1950
-Text HLabel 4150 2800 0    50   Input ~ 0
-USBD+
-Text HLabel 4150 2900 0    50   Input ~ 0
-USBD-
-Text HLabel 6250 2500 2    50   Input ~ 0
+$Comp
+L SIB_Footprint:FT232RQ U2
+U 1 1 601E1423
+P 5800 3650
+F 0 "U2" H 5800 4965 50  0000 C CNN
+F 1 "FT232RQ" H 5800 4874 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.3x3.3mm" H 5800 3650 50  0001 C CNN
+F 3 "" H 5800 3650 50  0001 C CNN
+	1    5800 3650
+	1    0    0    -1  
+$EndComp
+Text HLabel 6650 2750 2    50   Input ~ 0
 SIN
-Text HLabel 6250 2600 2    50   Input ~ 0
+Text HLabel 6650 2900 2    50   Input ~ 0
 SOUT
-Text Label 3850 3200 0    50   ~ 0
+Wire Wire Line
+	6500 2750 6650 2750
+Wire Wire Line
+	6500 2900 6650 2900
+Text HLabel 6650 3200 2    50   Input ~ 0
+DGND
+Wire Wire Line
+	6650 3200 6500 3200
+NoConn ~ 6650 3050
+Wire Wire Line
+	6500 3050 6650 3050
+NoConn ~ 6650 3350
+NoConn ~ 6650 3500
+NoConn ~ 6650 3650
+NoConn ~ 6650 3800
+NoConn ~ 6650 3950
+NoConn ~ 6650 4100
+NoConn ~ 6650 4250
+NoConn ~ 6650 4400
+NoConn ~ 6650 4550
+Wire Wire Line
+	6650 3350 6500 3350
+Wire Wire Line
+	6650 3500 6500 3500
+Wire Wire Line
+	6650 3650 6500 3650
+Wire Wire Line
+	6650 3800 6500 3800
+Wire Wire Line
+	6650 3950 6500 3950
+Wire Wire Line
+	6500 4100 6650 4100
+Wire Wire Line
+	6650 4250 6500 4250
+Wire Wire Line
+	6650 4400 6500 4400
+Wire Wire Line
+	6650 4550 6500 4550
+NoConn ~ 4950 3350
+NoConn ~ 4950 3500
+NoConn ~ 4950 3650
+NoConn ~ 4950 3800
+NoConn ~ 4950 3950
+NoConn ~ 4950 4250
+NoConn ~ 4950 4400
+NoConn ~ 4950 4550
+Wire Wire Line
+	4950 3350 5100 3350
+Wire Wire Line
+	4950 3500 5100 3500
+Wire Wire Line
+	4950 3650 5100 3650
+Wire Wire Line
+	4950 3800 5100 3800
+Wire Wire Line
+	4950 3950 5100 3950
+Wire Wire Line
+	4950 4250 5100 4250
+Wire Wire Line
+	4950 4400 5100 4400
+Wire Wire Line
+	4950 4550 5100 4550
+Text Label 4950 4100 2    50   ~ 0
 3V3VOUT
-Text HLabel 5350 1750 2    50   Input ~ 0
+Wire Wire Line
+	5100 4100 4950 4100
+Text HLabel 4950 3200 0    50   Input ~ 0
+USBD+
+Text HLabel 4950 3050 0    50   Input ~ 0
+USBD-
+Wire Wire Line
+	4950 3050 5100 3050
+Wire Wire Line
+	4950 3200 5100 3200
+Wire Wire Line
+	5100 2750 4450 2750
+Wire Wire Line
+	4450 2750 4450 4700
+Wire Wire Line
+	4450 4700 5100 4700
+Wire Wire Line
+	4250 4700 4450 4700
+Connection ~ 4450 4700
+Wire Wire Line
+	4450 2750 4250 2750
+Connection ~ 4450 2750
+Text HLabel 4250 5000 3    50   Input ~ 0
+DGND
+Text HLabel 4250 3050 3    50   Input ~ 0
+DGND
+Text HLabel 5650 5100 3    50   Input ~ 0
+DGND
+Wire Wire Line
+	5650 4950 5650 5000
+Wire Wire Line
+	5650 5000 5750 5000
+Wire Wire Line
+	5750 5000 5750 4950
+Connection ~ 5650 5000
+Wire Wire Line
+	5650 5000 5650 5100
+Wire Wire Line
+	5750 5000 5850 5000
+Wire Wire Line
+	5850 5000 5850 4950
+Connection ~ 5750 5000
+Wire Wire Line
+	5850 5000 5950 5000
+Wire Wire Line
+	5950 5000 5950 4950
+Connection ~ 5850 5000
+Wire Wire Line
+	5950 4950 6050 4950
+Wire Wire Line
+	6050 4950 6050 5000
+Wire Wire Line
+	6050 5000 5950 5000
+Connection ~ 5950 5000
+Text HLabel 4950 2900 0    50   Input ~ 0
 5VUSB
-Text HLabel 6900 2900 3    50   Input ~ 0
+Wire Wire Line
+	4950 2900 5100 2900
+Text HLabel 4250 2050 0    50   Input ~ 0
+5VUSB
+Text HLabel 4500 2350 3    50   Input ~ 0
 DGND
-Text HLabel 4900 4450 3    50   Input ~ 0
-DGND
-Text HLabel 3800 4400 3    50   Input ~ 0
-DGND
+Wire Wire Line
+	4250 2050 4500 2050
+Text Label 4600 4700 3    50   ~ 0
+3V3VOUT
+Wire Wire Line
+	6150 4950 6150 5000
+Wire Wire Line
+	6150 5000 6050 5000
+Connection ~ 6050 5000
 $EndSCHEMATC
