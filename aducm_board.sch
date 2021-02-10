@@ -4,13 +4,13 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 5
-Title "ADuCM355 Template"
-Date ""
-Rev ""
-Comp "USACE ERDC"
-Comment1 "Keith Conley, Jason Ray"
-Comment2 ""
-Comment3 ""
+Title "CRABStat"
+Date "2021-02-10"
+Rev "1.6"
+Comp "U.S. Army Engineer Research and Development Center"
+Comment1 "Sensor Integration Branch"
+Comment2 "ChemCRAB"
+Comment3 "Keith Conley, Jason Ray"
 Comment4 ""
 $EndDescr
 $Comp
@@ -39,8 +39,6 @@ F 3 "" H 2500 4350 50  0001 C CNN
 	1    2500 4350
 	1    0    0    -1  
 $EndComp
-Text Notes 2750 4550 0    50   ~ 0
-Grounds
 Text Label 14700 1000 2    50   ~ 0
 CE0
 Text Label 14700 1150 2    50   ~ 0
@@ -767,25 +765,19 @@ Wire Wire Line
 	1900 8750 2100 8750
 Text Label 2100 9950 0    50   ~ 0
 ~RESET
-Text Label 1000 7850 2    50   ~ 0
+Text Label 3700 7850 0    50   ~ 0
 CE0
-Text Label 1000 8050 2    50   ~ 0
+Text Label 3700 8300 0    50   ~ 0
 RE0
-Text Label 1000 7950 2    50   ~ 0
+Text Label 3700 8100 0    50   ~ 0
 WE0
-Text Label 1000 9150 2    50   ~ 0
+Text Label 3700 8700 0    50   ~ 0
 VBIAS0
-Text Label 1000 9050 2    50   ~ 0
-VZERO0
-Text Label 1000 10250 2    50   ~ 0
-CE1
-Text Label 1000 10050 2    50   ~ 0
-RE1
-Text Label 1000 10150 2    50   ~ 0
-WE1
-Text Label 2300 10150 0    50   ~ 0
+Text Label 3500 8500 2    50   ~ 0
+VZERO0Breakout
+Text Label 3700 9700 0    50   ~ 0
 VBIAS1
-Text Label 2300 10250 0    50   ~ 0
+Text Label 3700 9950 0    50   ~ 0
 VZERO1
 Text Label 8000 4300 2    50   ~ 0
 P0.0_SPI0_CLK
@@ -865,8 +857,6 @@ Wire Wire Line
 	1200 9150 1400 9150
 Wire Wire Line
 	1200 9050 1400 9050
-Wire Wire Line
-	1200 10250 1400 10250
 Wire Wire Line
 	1400 10150 1200 10150
 Wire Wire Line
@@ -998,12 +988,6 @@ F 3 "~" H 3000 4350 50  0001 C CNN
 	1    3000 4350
 	0    1    1    0   
 $EndComp
-Wire Notes Line
-	3400 4600 3400 4000
-Wire Notes Line
-	2150 4000 3400 4000
-Wire Notes Line
-	2150 4600 3400 4600
 $Sheet
 S 3650 750  750  500 
 U 600E8F3B
@@ -1167,10 +1151,6 @@ Wire Notes Line
 	2900 1500 2900 3950
 Wire Notes Line
 	2850 1500 5650 1500
-Text Label 11600 900  0    50   ~ 0
-CE0
-Text Label 11600 2150 0    50   ~ 0
-VBIAS0
 Text Label 13000 900  0    50   ~ 0
 CE1
 Text Label 13000 2150 0    50   ~ 0
@@ -1179,65 +1159,12 @@ Text Label 12200 2500 3    50   ~ 0
 VZERO1
 Text Label 12750 2500 3    50   ~ 0
 VZERO0
-$Comp
-L Device:C_Small C24
-U 1 1 603D916E
-P 11600 1100
-F 0 "C24" H 11750 1100 50  0000 C CNN
-F 1 "Variable" H 11350 1100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 11600 1100 50  0001 C CNN
-F 3 "~" H 11600 1100 50  0001 C CNN
-	1    11600 1100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small_US R5
-U 1 1 603D9530
-P 11600 1650
-F 0 "R5" H 11700 1650 50  0000 L CNN
-F 1 "Variable" H 11200 1650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 11600 1650 50  0001 C CNN
-F 3 "~" H 11600 1650 50  0001 C CNN
-	1    11600 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11600 1550 11600 1350
-Wire Wire Line
-	11600 900  11600 1000
 Wire Wire Line
 	10550 7700 11200 7700
 Wire Wire Line
 	11200 7700 11200 7800
 Wire Wire Line
 	11200 7800 11450 7800
-$Comp
-L Device:C_Small C26
-U 1 1 6044F319
-P 12100 1650
-F 0 "C26" H 12250 1650 50  0000 C CNN
-F 1 "Variable" H 11850 1650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 12100 1650 50  0001 C CNN
-F 3 "~" H 12100 1650 50  0001 C CNN
-	1    12100 1650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	11600 1350 12100 1350
-Wire Wire Line
-	12100 1350 12100 1550
-Connection ~ 11600 1350
-Wire Wire Line
-	11600 1350 11600 1200
-Wire Wire Line
-	12100 1750 12100 2000
-Wire Wire Line
-	12100 2000 11600 2000
-Wire Wire Line
-	11600 1750 11600 2000
-Wire Wire Line
-	11600 2150 11600 2000
-Connection ~ 11600 2000
 $Comp
 L Device:C_Small C30
 U 1 1 604ADD69
@@ -1314,10 +1241,6 @@ F 3 "~" H 12950 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	16000 500  16000 2950
-Wire Notes Line
-	11150 2950 11150 500 
-Wire Notes Line
 	11150 500  16000 500 
 Text Notes 11200 600  0    50   ~ 0
 Potentiostat Frontend
@@ -1325,7 +1248,7 @@ Text Notes 2900 650  0    50   ~ 0
 5V to 3.3V
 Text Notes 2950 1600 0    50   ~ 0
 Digital and Analog Rail Seperation
-Text Notes 2200 4100 0    50   ~ 0
+Text Notes 2650 4150 0    50   ~ 0
 Ground Connection Point
 Wire Wire Line
 	10700 4300 10550 4300
@@ -1507,113 +1430,234 @@ Wire Wire Line
 	14700 3200 14850 3200
 NoConn ~ 750  7000
 $Comp
-L Device:R_Small_US R13
-U 1 1 601C1088
-P 1100 7850
-F 0 "R13" V 1050 7900 50  0000 L CNN
-F 1 "0" V 1050 8100 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1100 7850 50  0001 C CNN
-F 3 "~" H 1100 7850 50  0001 C CNN
-	1    1100 7850
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R_Small_US R14
 U 1 1 601C194B
-P 1100 7950
-F 0 "R14" V 1050 8000 50  0000 L CNN
-F 1 "0" V 1050 8200 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1100 7950 50  0001 C CNN
-F 3 "~" H 1100 7950 50  0001 C CNN
-	1    1100 7950
+P 3600 8100
+F 0 "R14" V 3500 7900 50  0000 L CNN
+F 1 "0" V 3500 8150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3600 8100 50  0001 C CNN
+F 3 "~" H 3600 8100 50  0001 C CNN
+	1    3600 8100
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small_US R15
 U 1 1 601C24FF
-P 1100 8050
-F 0 "R15" V 1050 8100 50  0000 L CNN
-F 1 "0" V 1050 8300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1100 8050 50  0001 C CNN
-F 3 "~" H 1100 8050 50  0001 C CNN
-	1    1100 8050
+P 3600 8300
+F 0 "R15" V 3500 8100 50  0000 L CNN
+F 1 "0" V 3500 8350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3600 8300 50  0001 C CNN
+F 3 "~" H 3600 8300 50  0001 C CNN
+	1    3600 8300
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small_US R16
 U 1 1 601D9F6C
-P 1100 9050
-F 0 "R16" V 1050 9150 50  0000 L CNN
-F 1 "0" V 1050 9300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1100 9050 50  0001 C CNN
-F 3 "~" H 1100 9050 50  0001 C CNN
-	1    1100 9050
+P 3600 8500
+F 0 "R16" V 3500 8300 50  0000 L CNN
+F 1 "0" V 3500 8550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3600 8500 50  0001 C CNN
+F 3 "~" H 3600 8500 50  0001 C CNN
+	1    3600 8500
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small_US R17
 U 1 1 601DA290
-P 1100 9150
-F 0 "R17" V 1050 9250 50  0000 L CNN
-F 1 "0" V 1050 9400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1100 9150 50  0001 C CNN
-F 3 "~" H 1100 9150 50  0001 C CNN
-	1    1100 9150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small_US R18
-U 1 1 601DA50F
-P 1100 10050
-F 0 "R18" V 1050 10100 50  0000 L CNN
-F 1 "0" V 1050 10300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1100 10050 50  0001 C CNN
-F 3 "~" H 1100 10050 50  0001 C CNN
-	1    1100 10050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small_US R19
-U 1 1 601DA676
-P 1100 10150
-F 0 "R19" V 1050 10200 50  0000 L CNN
-F 1 "0" V 1050 10400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1100 10150 50  0001 C CNN
-F 3 "~" H 1100 10150 50  0001 C CNN
-	1    1100 10150
+P 3600 8700
+F 0 "R17" V 3500 8500 50  0000 L CNN
+F 1 "0" V 3500 8750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3600 8700 50  0001 C CNN
+F 3 "~" H 3600 8700 50  0001 C CNN
+	1    3600 8700
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small_US R21
 U 1 1 601DA7DD
-P 2200 10150
-F 0 "R21" V 2150 9900 50  0000 L CNN
-F 1 "0" V 2150 9850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2200 10150 50  0001 C CNN
-F 3 "~" H 2200 10150 50  0001 C CNN
-	1    2200 10150
+P 3600 9700
+F 0 "R21" V 3500 9500 50  0000 L CNN
+F 1 "0" V 3500 9750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3600 9700 50  0001 C CNN
+F 3 "~" H 3600 9700 50  0001 C CNN
+	1    3600 9700
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small_US R22
-U 1 1 601DA9A2
-P 2200 10250
-F 0 "R22" V 2150 10000 50  0000 L CNN
-F 1 "0" V 2150 9950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2200 10250 50  0001 C CNN
-F 3 "~" H 2200 10250 50  0001 C CNN
-	1    2200 10250
-	0    1    1    0   
-$EndComp
+Text Label 2100 10150 0    50   ~ 0
+VBIAS1Breakout
+Text Label 3500 9700 2    50   ~ 0
+VBIAS1Breakout
+Text Label 2100 10250 0    50   ~ 0
+VZERO1Breakout
+Text Label 3500 9950 2    50   ~ 0
+VZERO1Breakout
 $Comp
 L Device:R_Small_US R20
 U 1 1 601DABDA
-P 1100 10250
-F 0 "R20" V 1050 10300 50  0000 L CNN
-F 1 "0" V 1050 10500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1100 10250 50  0001 C CNN
-F 3 "~" H 1100 10250 50  0001 C CNN
-	1    1100 10250
+P 3600 9450
+F 0 "R20" V 3500 9250 50  0000 L CNN
+F 1 "0" V 3500 9500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3600 9450 50  0001 C CNN
+F 3 "~" H 3600 9450 50  0001 C CNN
+	1    3600 9450
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	1200 10250 1400 10250
+Text Label 3700 9450 0    50   ~ 0
+CE1
+Text Label 3500 9450 2    50   ~ 0
+CE1Breakout
+Text Label 1200 10250 2    50   ~ 0
+CE1Breakout
+Text Label 3700 8950 0    50   ~ 0
+RE1
+Text Label 3700 9200 0    50   ~ 0
+WE1
+$Comp
+L Device:R_Small_US R18
+U 1 1 601DA50F
+P 3600 8950
+F 0 "R18" V 3700 9000 50  0000 L CNN
+F 1 "0" V 3700 8850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3600 8950 50  0001 C CNN
+F 3 "~" H 3600 8950 50  0001 C CNN
+	1    3600 8950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R19
+U 1 1 601DA676
+P 3600 9200
+F 0 "R19" V 3700 9250 50  0000 L CNN
+F 1 "0" V 3700 9100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3600 9200 50  0001 C CNN
+F 3 "~" H 3600 9200 50  0001 C CNN
+	1    3600 9200
+	0    -1   -1   0   
+$EndComp
+Text Label 3500 9200 2    50   ~ 0
+WE1Breakout
+Text Label 3500 8950 2    50   ~ 0
+RE1Breakout
+Text Label 1200 10050 2    50   ~ 0
+RE1Breakout
+Text Label 1200 10150 2    50   ~ 0
+WE1Breakout
+$Comp
+L Device:R_Small_US R13
+U 1 1 601C1088
+P 3600 7850
+F 0 "R13" V 3500 7650 50  0000 L CNN
+F 1 "0" V 3500 7900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3600 7850 50  0001 C CNN
+F 3 "~" H 3600 7850 50  0001 C CNN
+	1    3600 7850
+	0    1    1    0   
+$EndComp
+Text Label 3500 8100 2    50   ~ 0
+WE0Breakout
+Text Label 3500 8300 2    50   ~ 0
+RE0Breakout
+Text Label 3500 7850 2    50   ~ 0
+CE0Breakout
+Text Label 1200 7850 2    50   ~ 0
+CE0Breakout
+Text Label 1200 7950 2    50   ~ 0
+WE0Breakout
+Text Label 1200 8050 2    50   ~ 0
+RE0Breakout
+Text Label 3500 8700 2    50   ~ 0
+VBIAS0Breakout
+Text Label 3700 8500 0    50   ~ 0
+VZERO0
+Text Label 1200 9050 2    50   ~ 0
+VZERO0Breakout
+Text Label 1200 9150 2    50   ~ 0
+VBIAS0Breakout
+$Comp
+L Device:R_Small_US R22
+U 1 1 601DA9A2
+P 3600 9950
+F 0 "R22" V 3500 9750 50  0000 L CNN
+F 1 "0" V 3500 10000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3600 9950 50  0001 C CNN
+F 3 "~" H 3600 9950 50  0001 C CNN
+	1    3600 9950
+	0    1    1    0   
+$EndComp
+Connection ~ 11600 2000
+Wire Wire Line
+	11600 2150 11600 2000
+Wire Wire Line
+	11600 1750 11600 2000
+Wire Wire Line
+	12100 2000 11600 2000
+Wire Wire Line
+	12100 1750 12100 2000
+Wire Wire Line
+	11600 1350 11600 1200
+Connection ~ 11600 1350
+Wire Wire Line
+	12100 1350 12100 1550
+Wire Wire Line
+	11600 1350 12100 1350
+$Comp
+L Device:C_Small C26
+U 1 1 6044F319
+P 12100 1650
+F 0 "C26" H 12250 1650 50  0000 C CNN
+F 1 "Variable" H 11850 1650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 12100 1650 50  0001 C CNN
+F 3 "~" H 12100 1650 50  0001 C CNN
+	1    12100 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11600 900  11600 1000
+Wire Wire Line
+	11600 1550 11600 1350
+$Comp
+L Device:R_Small_US R5
+U 1 1 603D9530
+P 11600 1650
+F 0 "R5" H 11700 1650 50  0000 L CNN
+F 1 "Variable" H 11200 1650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 11600 1650 50  0001 C CNN
+F 3 "~" H 11600 1650 50  0001 C CNN
+	1    11600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C24
+U 1 1 603D916E
+P 11600 1100
+F 0 "C24" H 11750 1100 50  0000 C CNN
+F 1 "Variable" H 11350 1100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 11600 1100 50  0001 C CNN
+F 3 "~" H 11600 1100 50  0001 C CNN
+	1    11600 1100
+	-1   0    0    1   
+$EndComp
+Text Label 11600 2150 0    50   ~ 0
+VBIAS0
+Text Label 11600 900  0    50   ~ 0
+CE0
+Wire Notes Line
+	11150 3450 16000 3450
+Wire Notes Line
+	16000 500  16000 3450
+Wire Notes Line
+	11150 500  11150 3450
+Text Notes 2500 10450 0    50   ~ 0
+Breakout
+Text Notes 3600 7450 0    50   ~ 0
+USB In
+Wire Notes Line
+	3650 4600 3650 4000
+Wire Notes Line
+	2150 4000 3650 4000
+Wire Notes Line
+	2150 4600 3650 4600
 $EndSCHEMATC

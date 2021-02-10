@@ -4,13 +4,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Title "Power Conversion"
+Date "2021-02-10"
+Rev "1.6"
+Comp "U.S. Army Engineer Research and Development Center"
+Comment1 "Sensor Integration Branch"
+Comment2 "ChemCRAB"
+Comment3 "Keith Conley, Jason Ray"
 Comment4 ""
 $EndDescr
 $Comp
