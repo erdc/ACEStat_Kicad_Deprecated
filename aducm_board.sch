@@ -39,8 +39,6 @@ F 3 "" H 2500 4350 50  0001 C CNN
 	1    2500 4350
 	1    0    0    -1  
 $EndComp
-Text Label 14700 1000 2    50   ~ 0
-CE0
 Text Label 14700 1150 2    50   ~ 0
 WE0
 Text Label 14700 1300 2    50   ~ 0
@@ -466,7 +464,7 @@ L Device:C_Small C20
 U 1 1 5DF90236
 P 11150 7300
 F 0 "C20" V 11000 7300 50  0000 C CNN
-F 1 "0.1u" V 11300 7300 50  0000 C CNN
+F 1 "0.1uF" V 11300 7300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 11150 7300 50  0001 C CNN
 F 3 "~" H 11150 7300 50  0001 C CNN
 	1    11150 7300
@@ -615,8 +613,6 @@ Text Label 10700 6050 0    50   ~ 0
 RE0
 Wire Wire Line
 	10550 5950 10700 5950
-Text Label 10700 5950 0    50   ~ 0
-CE0
 Wire Wire Line
 	10550 6750 10700 6750
 Text Label 10700 6750 0    50   ~ 0
@@ -636,7 +632,7 @@ L Device:C_Small C19
 U 1 1 5DFD0379
 P 11150 6250
 F 0 "C19" V 11000 6250 50  0000 C CNN
-F 1 "0.1u" V 11300 6250 50  0000 C CNN
+F 1 "0.1uF" V 11300 6250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 11150 6250 50  0001 C CNN
 F 3 "~" H 11150 6250 50  0001 C CNN
 	1    11150 6250
@@ -765,8 +761,6 @@ Wire Wire Line
 	1900 8750 2100 8750
 Text Label 2100 9950 0    50   ~ 0
 ~RESET
-Text Label 3700 7850 0    50   ~ 0
-CE0
 Text Label 3700 8300 0    50   ~ 0
 RE0
 Text Label 3700 8100 0    50   ~ 0
@@ -1151,8 +1145,6 @@ Wire Notes Line
 	2900 1500 2900 3950
 Wire Notes Line
 	2850 1500 5650 1500
-Text Label 13000 900  0    50   ~ 0
-CE1
 Text Label 13000 2150 0    50   ~ 0
 VBIAS1
 Text Label 11400 3050 3    50   ~ 0
@@ -1284,7 +1276,7 @@ L Device:C_Small C14
 U 1 1 5DE9C21A
 P 6900 6700
 F 0 "C14" V 6750 6700 50  0000 C CNN
-F 1 "4.7u" V 7050 6700 50  0000 C CNN
+F 1 "4.7uF" V 7050 6700 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6900 6700 50  0001 C CNN
 F 3 "~" H 6900 6700 50  0001 C CNN
 	1    6900 6700
@@ -1642,8 +1634,6 @@ F 3 "~" H 11600 1100 50  0001 C CNN
 $EndComp
 Text Label 11600 2150 0    50   ~ 0
 VBIAS0
-Text Label 11600 900  0    50   ~ 0
-CE0
 Wire Notes Line
 	11150 3450 16000 3450
 Wire Notes Line
@@ -1711,17 +1701,8 @@ Text GLabel 8650 1900 0    50   Input ~ 0
 DVDD
 Wire Wire Line
 	8650 1900 9150 1900
-Text Label 10650 1750 0    50   ~ 0
-CE0
-Wire Wire Line
-	10250 1750 10450 1750
-Wire Wire Line
-	10450 1750 10450 1900
-Wire Wire Line
-	10450 1900 10250 1900
-Connection ~ 10450 1750
-Wire Wire Line
-	10450 1750 10650 1750
+Text Label 14700 1000 2    50   ~ 0
+CE0_out
 Text GLabel 9850 3050 3    50   Input ~ 0
 DGND
 Wire Wire Line
@@ -1808,21 +1789,27 @@ Wire Wire Line
 	10400 2350 10250 2350
 Wire Wire Line
 	10400 2500 10250 2500
-Text Label 10600 1150 0    50   ~ 0
-CE0
-$Comp
-L Device:R_Small_US R24
-U 1 1 603C909F
-P 10550 1600
-F 0 "R24" V 10450 1400 50  0000 L CNN
-F 1 "0" V 10450 1650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 10550 1600 50  0001 C CNN
-F 3 "~" H 10550 1600 50  0001 C CNN
-	1    10550 1600
-	0    1    1    0   
-$EndComp
+Text Label 3700 7850 0    50   ~ 0
+CE0_in
+Text Label 10700 5950 0    50   ~ 0
+CE0_in
+Text Label 13000 900  0    50   ~ 0
+CE1
+Text Label 11600 900  0    50   ~ 0
+CE0_out
+Text Label 10550 1750 0    50   ~ 0
+CE0_out
 Wire Wire Line
-	10450 1600 10250 1600
-Text Label 10650 1600 0    50   ~ 0
-CE0
+	10550 1600 10250 1600
+Wire Wire Line
+	10250 1750 10400 1750
+Wire Wire Line
+	10400 1750 10400 1900
+Wire Wire Line
+	10400 1900 10250 1900
+Connection ~ 10400 1750
+Wire Wire Line
+	10400 1750 10550 1750
+Text Label 10550 1600 0    50   ~ 0
+CE0_in
 $EndSCHEMATC
