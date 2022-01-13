@@ -1145,8 +1145,6 @@ Wire Notes Line
 	2900 1500 2900 3950
 Wire Notes Line
 	2850 1500 5650 1500
-Text Label 13000 2150 0    50   ~ 0
-VBIAS1
 Text Label 11400 3050 3    50   ~ 0
 VZERO1
 Text Label 11950 3050 3    50   ~ 0
@@ -1157,59 +1155,6 @@ Wire Wire Line
 	11200 7700 11200 7800
 Wire Wire Line
 	11200 7800 11450 7800
-$Comp
-L Device:C_Small C30
-U 1 1 604ADD69
-P 13000 1100
-F 0 "C30" H 13150 1100 50  0000 C CNN
-F 1 "Variable" H 12750 1100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 13000 1100 50  0001 C CNN
-F 3 "~" H 13000 1100 50  0001 C CNN
-	1    13000 1100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small_US R6
-U 1 1 604ADD73
-P 13000 1650
-F 0 "R6" H 13100 1650 50  0000 L CNN
-F 1 "Variable" H 12600 1650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 13000 1650 50  0001 C CNN
-F 3 "~" H 13000 1650 50  0001 C CNN
-	1    13000 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13000 1550 13000 1350
-Wire Wire Line
-	13000 900  13000 1000
-$Comp
-L Device:C_Small C32
-U 1 1 604ADD7F
-P 13500 1650
-F 0 "C32" H 13650 1650 50  0000 C CNN
-F 1 "Variable" H 13250 1650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 13500 1650 50  0001 C CNN
-F 3 "~" H 13500 1650 50  0001 C CNN
-	1    13500 1650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	13000 1350 13500 1350
-Wire Wire Line
-	13500 1350 13500 1550
-Connection ~ 13000 1350
-Wire Wire Line
-	13000 1350 13000 1200
-Wire Wire Line
-	13500 1750 13500 2000
-Wire Wire Line
-	13500 2000 13000 2000
-Wire Wire Line
-	13000 1750 13000 2000
-Wire Wire Line
-	13000 2150 13000 2000
-Connection ~ 13000 2000
 $Comp
 L Connector:TestPoint TP1
 U 1 1 60567AF1
@@ -1577,61 +1522,6 @@ F 3 "~" H 3600 9950 50  0001 C CNN
 	1    3600 9950
 	0    1    1    0   
 $EndComp
-Connection ~ 11600 2000
-Wire Wire Line
-	11600 2150 11600 2000
-Wire Wire Line
-	11600 1750 11600 2000
-Wire Wire Line
-	12100 2000 11600 2000
-Wire Wire Line
-	12100 1750 12100 2000
-Wire Wire Line
-	11600 1350 11600 1200
-Connection ~ 11600 1350
-Wire Wire Line
-	12100 1350 12100 1550
-Wire Wire Line
-	11600 1350 12100 1350
-$Comp
-L Device:C_Small C26
-U 1 1 6044F319
-P 12100 1650
-F 0 "C26" H 12250 1650 50  0000 C CNN
-F 1 "Variable" H 11850 1650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 12100 1650 50  0001 C CNN
-F 3 "~" H 12100 1650 50  0001 C CNN
-	1    12100 1650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	11600 900  11600 1000
-Wire Wire Line
-	11600 1550 11600 1350
-$Comp
-L Device:R_Small_US R5
-U 1 1 603D9530
-P 11600 1650
-F 0 "R5" H 11700 1650 50  0000 L CNN
-F 1 "Variable" H 11200 1650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 11600 1650 50  0001 C CNN
-F 3 "~" H 11600 1650 50  0001 C CNN
-	1    11600 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C24
-U 1 1 603D916E
-P 11600 1100
-F 0 "C24" H 11750 1100 50  0000 C CNN
-F 1 "Variable" H 11350 1100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 11600 1100 50  0001 C CNN
-F 3 "~" H 11600 1100 50  0001 C CNN
-	1    11600 1100
-	-1   0    0    1   
-$EndComp
-Text Label 11600 2150 0    50   ~ 0
-VBIAS0
 Wire Notes Line
 	11150 3450 16000 3450
 Wire Notes Line
@@ -1648,173 +1538,17 @@ Wire Notes Line
 	2150 4000 3650 4000
 Wire Notes Line
 	2150 4600 3650 4600
-Wire Notes Line
-	6450 3450 6450 500 
-Wire Notes Line
-	6450 500  10950 500 
-Wire Notes Line
-	10950 500  10950 3450
-Wire Notes Line
-	6450 3450 10950 3450
-Text Notes 6500 650  0    50   ~ 0
-Variable CE-RE Resistance
-$Comp
-L SIB_Footprint:AD5142 U4
-U 1 1 604F5E41
-P 9750 2050
-F 0 "U4" H 9700 3050 50  0000 L CNN
-F 1 "AD5142" H 9600 2950 50  0000 L CNN
-F 2 "Package_CSP:LFCSP-16-1EP_3x3mm_P0.5mm_EP1.854x1.854mm" H 11100 650 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD5122_5142.pdf" H 11100 650 50  0001 C CNN
-	1    9750 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 1450 8650 1450
-Text Label 8850 2200 2    50   ~ 0
-P1.2_SPI1_CLK
-Text Label 8850 2350 2    50   ~ 0
-P1.3_SPI1_MOSI
-Text Label 7850 2500 2    50   ~ 0
-P1.4_SPI1_MISO
-Text Label 8850 2650 2    50   ~ 0
-P1.5_SPI1_~CS
-Wire Wire Line
-	9850 3050 9850 2900
-Text GLabel 9650 3050 3    50   Input ~ 0
-DGND
-Text GLabel 10050 3050 3    50   Input ~ 0
-DGND
-Wire Wire Line
-	10050 3050 10050 2900
-Wire Wire Line
-	9650 3050 9650 2900
-Wire Wire Line
-	8650 1600 9150 1600
-Text GLabel 8650 1750 0    50   Input ~ 0
-DGND
-Wire Wire Line
-	9150 1750 8650 1750
-Text GLabel 8650 1900 0    50   Input ~ 0
-DVDD
-Wire Wire Line
-	8650 1900 9150 1900
 Text Label 14700 1000 2    50   ~ 0
-CE0_out
-Text GLabel 9850 3050 3    50   Input ~ 0
-DGND
-Wire Wire Line
-	8850 2200 9150 2200
-Wire Wire Line
-	9150 2350 8850 2350
-Wire Wire Line
-	8850 2650 9150 2650
-Wire Wire Line
-	7850 2500 8000 2500
-$Comp
-L Device:R_Small_US R23
-U 1 1 607A8A75
-P 8000 2200
-F 0 "R23" H 7800 2250 50  0000 L CNN
-F 1 "2.2k" H 7800 2150 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 8000 2200 50  0001 C CNN
-F 3 "~" H 8000 2200 50  0001 C CNN
-	1    8000 2200
-	1    0    0    -1  
-$EndComp
-Connection ~ 8000 2500
-Wire Wire Line
-	8000 2500 9150 2500
-Wire Wire Line
-	8000 2500 8000 2300
-Text GLabel 8000 1950 1    50   Input ~ 0
-DVDD
-Wire Wire Line
-	8000 1950 8000 2100
-Text GLabel 7350 1000 0    50   Input ~ 0
-DVDD
-$Comp
-L Device:C C47
-U 1 1 607DC035
-P 7550 1200
-F 0 "C47" V 7400 1150 50  0000 L CNN
-F 1 "0.1uF" V 7750 1100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 7588 1050 50  0001 C CNN
-F 3 "~" H 7550 1200 50  0001 C CNN
-	1    7550 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C48
-U 1 1 607DC48F
-P 8000 1200
-F 0 "C48" V 7850 1150 50  0000 L CNN
-F 1 "10uF" V 8200 1100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 8038 1050 50  0001 C CNN
-F 3 "~" H 8000 1200 50  0001 C CNN
-	1    8000 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 1000 7550 1000
-Wire Wire Line
-	7550 1000 7550 1050
-Wire Wire Line
-	7550 1000 8000 1000
-Wire Wire Line
-	8000 1000 8000 1050
-Connection ~ 7550 1000
-Text GLabel 7550 1350 3    50   Input ~ 0
-DGND
-Text GLabel 8000 1350 3    50   Input ~ 0
-DGND
-Wire Wire Line
-	8000 1000 8650 1000
-Wire Wire Line
-	8650 1000 8650 1450
-Connection ~ 8000 1000
-Wire Wire Line
-	8650 1450 8650 1600
-Connection ~ 8650 1450
-NoConn ~ 10400 2500
-NoConn ~ 10400 2350
-NoConn ~ 10400 2200
-Wire Wire Line
-	10400 2200 10250 2200
-Wire Wire Line
-	10250 2200 10250 2350
-Wire Wire Line
-	10400 2350 10250 2350
-Wire Wire Line
-	10400 2500 10250 2500
+CE0
 Text Label 3700 7850 0    50   ~ 0
-CE0_in
+CE0
 Text Label 10700 5950 0    50   ~ 0
-CE0_in
-Text Label 13000 900  0    50   ~ 0
-CE1
-Text Label 11600 900  0    50   ~ 0
-CE0_out
-Text Label 10550 1750 0    50   ~ 0
-CE0_out
-Wire Wire Line
-	10550 1600 10250 1600
-Wire Wire Line
-	10250 1750 10400 1750
-Wire Wire Line
-	10400 1750 10400 1900
-Wire Wire Line
-	10400 1900 10250 1900
-Connection ~ 10400 1750
-Wire Wire Line
-	10400 1750 10550 1750
-Text Label 10550 1600 0    50   ~ 0
-CE0_in
+CE0
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R5
 U 1 1 60542400
 P 7050 5000
-F 0 "R?" V 6950 4950 50  0000 L CNN
+F 0 "R5" V 6950 4950 50  0000 L CNN
 F 1 "100k" V 7200 4900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 7050 5000 50  0001 C CNN
 F 3 "~" H 7050 5000 50  0001 C CNN
@@ -1830,4 +1564,30 @@ DVDD
 Wire Wire Line
 	8150 5200 7050 5200
 Connection ~ 7050 5200
+Text Label 12600 3050 3    50   ~ 0
+VBIAS0
+$Comp
+L Connector:TestPoint TP3
+U 1 1 61F1F070
+P 12600 3050
+F 0 "TP3" H 12658 3168 50  0000 L CNN
+F 1 "TestPoint" H 12658 3077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 12800 3050 50  0001 C CNN
+F 3 "~" H 12800 3050 50  0001 C CNN
+	1    12600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 61F47442
+P 13200 3050
+F 0 "TP4" H 13258 3168 50  0000 L CNN
+F 1 "TestPoint" H 13258 3077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 13400 3050 50  0001 C CNN
+F 3 "~" H 13400 3050 50  0001 C CNN
+	1    13200 3050
+	1    0    0    -1  
+$EndComp
+Text Label 13200 3050 3    50   ~ 0
+VBIAS1
 $EndSCHEMATC
