@@ -1,0 +1,7 @@
+### Module positions - created on 5/17/2022 10:22:32 AM ###
+### Printed by Pcbnew version kicad (5.1.2)-1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                  Package                          PosX       PosY       Rot  Side
+J2        Conn_02x25_Odd_Even  Molex_SlimStack_2039550503   141.6500  -130.7150  180.0000  top
+## End

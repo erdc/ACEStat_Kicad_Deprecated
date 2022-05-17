@@ -1,0 +1,31 @@
+### Module positions - created on 5/17/2022 10:20:38 AM ###
+### Printed by Pcbnew version kicad (5.1.2)-1
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val                  Package                          PosX       PosY       Rot  Side
+C2        0.1uF                C_0402_1005Metric             -7.8100   -28.1600  180.0000  bottom
+C3        0.1uF                C_0402_1005Metric            -10.3000   -23.2100    0.0000  bottom
+C4        0.1uF                C_0402_1005Metric            -17.2500   -30.4000    0.0000  bottom
+C5        0.1uF                C_0402_1005Metric            -14.8000   -23.2100  180.0000  bottom
+C6        220pF                C_0402_1005Metric            -19.3300   -30.2000    0.0000  bottom
+C8        0.1uF                C_0402_1005Metric             -6.4500   -32.9000  180.0000  bottom
+C9        0.1uF                C_0402_1005Metric            -12.8500   -37.0800  270.0000  bottom
+C14       4.7uF                C_0402_1005Metric            -11.4250   -24.9600   90.0000  bottom
+C15       4.7uF                C_0402_1005Metric            -13.6750   -24.9400  270.0000  bottom
+C16       4.7uF                C_0402_1005Metric            -12.5500   -24.9400   90.0000  bottom
+C17       0.47uF               C_0402_1005Metric             -6.6700   -30.1500  180.0000  bottom
+C18       0.47uF               C_0402_1005Metric            -17.2500   -31.7900    0.0000  bottom
+C19       0.1uF                C_0402_1005Metric            -10.3000   -24.9600  270.0000  bottom
+C20       0.1uF                C_0402_1005Metric            -14.8000   -24.9400  270.0000  bottom
+C21       0.47uF               C_0402_1005Metric            -17.4500   -36.2800  270.0000  bottom
+C22       0.1uF                C_0402_1005Metric             -7.2300   -29.1500    0.0000  bottom
+C23       4.7uF                C_0402_1005Metric            -20.2200   -31.7900  180.0000  bottom
+C25       0.1uF                C_0402_1005Metric            -17.0600   -33.2600   90.0000  bottom
+C27       0.1uF                C_0402_1005Metric            -15.8400   -35.6900    0.0000  bottom
+C28       0.47uF               C_0402_1005Metric             -6.4500   -34.7500  180.0000  bottom
+C29       0.47uF               C_0402_1005Metric             -6.6500   -31.1600  180.0000  bottom
+C31       0.47uF               C_0402_1005Metric            -15.8400   -36.8700    0.0000  bottom
+J2        Conn_02x25_Odd_Even  Molex_SlimStack_2039560503   -12.4500   -43.3400    0.0000  bottom
+R4        200                  R_0402_1005Metric            -12.5500   -23.2100  180.0000  bottom
+R5        100k                 R_0402_1005Metric             -6.4500   -36.4600  180.0000  bottom
+## End
